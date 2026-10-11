@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+/* Dream Destinations theme (from the reference site): cream header + footer, coral accents there;
+   content uses blue headings (#6EC1E4) and green buttons (#61CE70), the logo blue/green. Fonts: Barlow + Roboto. */
+:root{--dd-coral:#F5735A;--dd-blue:#6EC1E4;--dd-green:#61CE70;--dd-ink:#2D3134;--dd-cream:#FBF0C9;--dd-cream-soft:#FFF2C4;
+--e-global-color-primary:#6EC1E4;--e-global-color-accent:#61CE70}
+html,body{overflow-x:hidden}
+.hfe-site-logo-img{width:auto!important;max-width:100%!important;height:auto!important;max-height:58px;object-fit:contain}
+.hfe-site-logo-container,.hfe-site-logo{display:flex;align-items:center}
+a:hover{color:var(--dd-blue)}
+/* hero (dark): blue heading line + green outlined button */
+.elementor-element-afacbc0 .elementor-heading-title,.elementor-element-afacbc0 .elementor-button-text{--c:var(--dd-green)}
+.elementor-element-82bcf07 .elementor-heading-title{color:var(--dd-blue)!important}
+.elementor-element-b291566 .elementor-button{color:var(--dd-green)!important;border-color:var(--dd-green)!important}
+.elementor-element-b291566 .elementor-button-text{color:var(--dd-green)!important}
+/* reviews (dark): blue heading, green accents */
+.reviews-section [style],.reviews-section strong,.reviews-section .review-service b{color:var(--dd-green)}
+.reviews-section h2{color:var(--dd-blue)}
+.reviews-section .review-card{border-top-color:var(--dd-green)!important}
+.reviews-section .swiper-pagination-bullet-active{background:var(--dd-green)!important}
+/* larger header logo */
+.elementor-element-7e70b2f{width:auto!important;min-width:200px}
+.elementor-element-7e70b2f .hfe-site-logo-img{max-height:64px}
+.elementor-element-a6d7d3c .hfe-site-logo-img,.elementor-element-df3b4ad .hfe-site-logo-img{max-height:48px}
+/* footer brand: full logo replaces icon + text */
+.elementor-element-eb9c93c img{width:230px!important;max-width:100%;height:auto!important}
+.elementor-element-eee05bf{display:none}
+.elementor-220 .elementor-element.elementor-element-eb9c93c{width:240px!important;max-width:100%!important;--container-widget-width:240px}
+
+/* ===== HEADER: cream like the reference (#F5DD87 @ 45% over white) ===== */
+.elementor-173 .elementor-element.e-con{background-color:var(--dd-cream)!important}
+.elementor-173 .elementor-icon-list-icon i,.elementor-173 .elementor-icon-list-icon svg{color:var(--dd-coral)!important;fill:var(--dd-coral)!important}
+.elementor-173 .elementor-icon-list-text{color:var(--dd-ink)!important}
+.elementor-173 .elementor-icon-list-item:hover .elementor-icon-list-text{color:var(--dd-coral)!important}
+.elementor-173 .elementor-element .elementor-nav-menu--main .elementor-item{color:var(--dd-ink);fill:var(--dd-ink)}
+.elementor-173 .elementor-nav-menu--dropdown{background-color:var(--dd-cream-soft)}
+.elementor-173 .elementor-nav-menu--dropdown a{color:var(--dd-ink)}
+.elementor-173 .elementor-nav-menu--dropdown a:hover,.elementor-173 .elementor-nav-menu--dropdown a.elementor-item-active{background-color:var(--dd-coral);color:#fff}
+.elementor-location-header a:hover{color:var(--dd-coral)}
+
+/* ===== FOOTER: white-to-cream gradient, black copyright bar, blue icons ===== */
+.elementor-220 .elementor-element.elementor-element-84a8b2f{background:linear-gradient(180deg,#FFFFFF 0%,var(--dd-cream) 100%)!important;border-top:1px solid var(--dd-ink)}
+.elementor-220 .elementor-element.elementor-element-290c598{background:var(--dd-cream)!important}
+.elementor-220 .elementor-element.elementor-element-04f9fc3{background-color:#000!important}
+.elementor-220 .elementor-heading-title{color:var(--dd-ink)!important}
+.elementor-220 .elementor-icon-list-text,.elementor-220 .elementor-widget-text-editor,.elementor-220 .elementor-widget-text-editor p{color:var(--dd-ink)!important}
+.elementor-220 .elementor-icon-list-icon i{color:var(--dd-blue)!important}
+.elementor-220 .elementor-icon-list-icon svg{fill:var(--dd-blue)!important}
+.elementor-220 .elementor-element-04f9fc3 .elementor-heading-title,.elementor-220 .elementor-element-04f9fc3 .elementor-widget-text-editor,.elementor-220 .elementor-element-04f9fc3 .elementor-widget-text-editor p,.elementor-220 .elementor-element-04f9fc3 .elementor-icon-list-text{color:#fff!important}
+.elementor-location-footer a:hover,footer a:hover{color:var(--dd-coral)!important}
+
+/* Barlow for menu, buttons and footer titles (same roles as the reference site); Roboto stays for body text */
+.elementor-nav-menu a,.hfe-nav-menu a,.hfe-nav-menu__toggle,.elementor-button,.elementor-button-text,.elementor-location-footer .elementor-heading-title,footer .elementor-heading-title{font-family:"Barlow","Roboto",sans-serif}
+.hfe-nav-menu a,.elementor-nav-menu a{font-weight:500}
+
+/* ===== Section navigation: smooth scroll + offset for the header ===== */
+html{scroll-behavior:smooth}
+#get-in-touch,#visa-application-process,#privacy-policy-section,#refund-policy-section{scroll-margin-top:90px}
+
+/* ===== Contact page: "Submit Request" -> email / WhatsApp choice ===== */
+.dd-modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;align-items:center;justify-content:center;z-index:100000;padding:16px}
+.dd-modal-overlay.dd-open{display:flex}
+.dd-modal{position:relative;background:#fff;border-radius:16px;max-width:420px;width:100%;padding:32px 28px 28px;text-align:center;box-shadow:0 10px 40px rgba(0,0,0,.3);font-family:"Roboto",sans-serif}
+.dd-modal h3{margin:0 0 8px;color:var(--dd-ink);font-size:22px}
+.dd-modal p{margin:0 0 20px;color:#555;font-size:15px}
+.dd-modal-close{position:absolute;top:8px;right:14px;background:none;border:0;font-size:28px;line-height:1;color:#777;cursor:pointer;padding:4px 8px}
+.dd-modal-close:hover{color:var(--dd-coral);background:none}
+.dd-modal-actions{display:flex;flex-direction:column;gap:12px}
+.dd-opt{display:flex;align-items:center;justify-content:center;gap:10px;padding:13px 18px;border-radius:10px;font-size:16px;font-weight:600;color:#fff!important;text-decoration:none}
+.dd-opt i{font-size:18px}
+.dd-opt-email{background:var(--dd-coral)}
+.dd-opt-wa{background:#25D366}
+.dd-opt:hover{opacity:.9;color:#fff!important}
+
+/* ===== Footer newsletter: status message ===== */
+.jkit-mailchimp-message.dd-sub-msg{margin-bottom:10px;padding:8px 12px;border-radius:8px;font-size:14px;text-align:center}
+.jkit-mailchimp-message.dd-sub-ok{background:#e6f7e9;color:#1d6b2c}
+.jkit-mailchimp-message.dd-sub-err{background:#fdecea;color:#a12b1c}

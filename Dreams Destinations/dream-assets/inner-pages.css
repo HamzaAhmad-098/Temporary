@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap");
+/* Inner pages only (loaded on every page except Home).
+   Rebuilds the page-level styling that was lost when the per-page Elementor CSS files saved as empty files:
+   hero backgrounds, section layout, buttons + hover animation, accordions, timeline, CTA banners, forms, policy cards. */
+:root{--g:#61CE70;--gb:#6EC1E4;--b:#61CE70;--bd:#6EC1E4;--ink:#2D3134;--mut:#5c6166;--line:#e6e9ec;--soft:#F2F2F2;
+--hero-img:url("https://images.unsplash.com/photo-1726136056898-717ca659a1ec?fm=jpg&q=70&w=1920&auto=format&fit=crop"),url("../wp-content/uploads/2026/05/visa-image-9QoQaXHk.webp");
+--hero-overlay:linear-gradient(135deg,rgba(45,49,52,.86) 0%,rgba(45,49,52,.72) 100%)}
+body:not(.home){font-family:"Roboto",Arial,sans-serif;color:var(--ink)}
+
+/* ---------- layout: Elementor containers had no display value (their per-page CSS was empty) ---------- */
+:where(body:not(.home) [data-elementor-type="wp-page"]) .e-con{display:flex;flex-direction:column;flex-wrap:nowrap;position:relative;box-sizing:border-box;width:100%;min-width:0}
+:where(body:not(.home) [data-elementor-type="wp-page"]) .e-con>.e-con-inner{display:flex;flex-direction:column;gap:20px}
+:where(body:not(.home) [data-elementor-type="wp-page"]) .e-con.e-child{width:auto}
+:where(body:not(.home) [data-elementor-type="wp-page"]) .e-con-full.e-child{flex:1 1 auto}
+:where(body:not(.home) [data-elementor-type="wp-page"]) .elementor-widget{width:100%}
+[data-elementor-type="wp-page"] .e-con.e-parent>.e-con-inner{width:100%;max-width:1200px;margin-inline:auto;padding-inline:24px}
+[data-elementor-type="wp-page"] .elementor-widget-heading .elementor-heading-title{font-weight:700;line-height:1.2;color:var(--ink)}
+:where(body:not(.home) [data-elementor-type="wp-page"] .elementor-widget-text-editor){color:var(--mut);line-height:1.75}
+:where(body:not(.home) [data-elementor-type="wp-page"] .elementor-widget-divider) .elementor-divider{padding:0;text-align:center;line-height:0}
+[data-elementor-type="wp-page"] .elementor-divider-separator{display:block;width:84px;height:4px;margin:14px auto 0;border:0;border-radius:20px;background:linear-gradient(90deg,var(--gb),var(--b))}
+
+/* ---------- buttons: EuroBrit style (pill/rounded, glow + lift on hover) ---------- */
+[data-elementor-type="wp-page"] .elementor-button,.cta-btn,.btn-primary,.btn-outline{display:inline-flex;align-items:center;justify-content:center;gap:8px;
+padding:14px 32px;border-radius:14px;border:2px solid var(--g);background:var(--g);color:#fff!important;font-family:"Barlow","Roboto",sans-serif;
+font-size:16px;font-weight:700;letter-spacing:.2px;text-decoration:none;cursor:pointer;position:relative;overflow:hidden;
+transition:transform .25s ease,box-shadow .25s ease,background-color .25s ease,border-color .25s ease}
+[data-elementor-type="wp-page"] .elementor-button::after,.cta-btn::after,.btn-primary::after,.btn-outline::after{content:"";position:absolute;top:0;left:-70%;width:50%;height:100%;
+background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);transition:left .55s ease}
+[data-elementor-type="wp-page"] .elementor-button:hover,.cta-btn:hover,.btn-primary:hover,.btn-outline:hover{transform:translateY(-3px);box-shadow:0 10px 24px -6px rgba(97,206,112,.55),0 0 12px rgba(97,206,112,.45);background:#4DB85D;border-color:#4DB85D;color:#fff!important}
+[data-elementor-type="wp-page"] .elementor-button:hover::after,.cta-btn:hover::after,.btn-primary:hover::after,.btn-outline:hover::after{left:130%}
+[data-elementor-type="wp-page"] .elementor-button:active,.cta-btn:active,.btn-primary:active,.btn-outline:active{transform:translateY(-1px)}
+[data-elementor-type="wp-page"] .elementor-button:focus-visible,.cta-btn:focus-visible,.btn-primary:focus-visible,.btn-outline:focus-visible{outline:3px solid var(--b);outline-offset:3px}
+.btn-outline{background:transparent;border-color:#fff}
+.btn-outline:hover{background:#fff;color:var(--g)!important;border-color:#fff}
+@media (prefers-reduced-motion:reduce){[data-elementor-type="wp-page"] .elementor-button,.cta-btn,.btn-primary,.btn-outline{transition:none}[data-elementor-type="wp-page"] .elementor-button::after{display:none}}
+
+/* ---------- hero blocks with background image ---------- */
+.elementor-element-03e0a92,.elementor-element-e925a09,.elementor-element-3d094e1,.elementor-element-1acb0d40,.visa-hero{
+background-image:var(--hero-overlay),var(--hero-img)!important;background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important;color:#fff}
+.elementor-element-03e0a92,.elementor-element-e925a09{padding:110px 0!important;text-align:center}
+.elementor-element-3d094e1,.elementor-element-1acb0d40{padding:90px 0 80px!important}
+.elementor-element-03e0a92 .e-con-inner,.elementor-element-e925a09 .e-con-inner{display:flex;flex-direction:column;align-items:center;gap:14px;max-width:880px!important}
+.elementor-element-03e0a92 .elementor-heading-title,.elementor-element-e925a09 .elementor-heading-title,
+.elementor-element-3d094e1 .elementor-heading-title,.elementor-element-1acb0d40 .elementor-heading-title{color:#fff!important}
+.elementor-element-03e0a92 .elementor-heading-title,.elementor-element-e925a09 .elementor-heading-title{font-size:clamp(32px,5vw,52px)}
+.elementor-element-03e0a92 .elementor-widget-text-editor,.elementor-element-e925a09 .elementor-widget-text-editor,.egv-hero-text{color:rgba(255,255,255,.92)!important;font-size:18px;line-height:1.7;max-width:760px;margin-inline:auto}
+.elementor-element-03e0a92 .elementor-widget-text-editor{max-width:760px}
+.egv-hero-section,.egv-container{padding:0}
+.elementor-element-03e0a92 .elementor-button{margin-top:10px}
+
+/* privacy + refund hero: badge, title, actions */
+.elementor-element-3d094e1>.e-con-inner>.e-con:first-child,.elementor-element-1acb0d40>.e-con-inner>.e-con:first-child{display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+.elementor-element-44498b4,.elementor-element-691ab4b0{gap:12px}
+.elementor-element-bc5caf0,.elementor-element-b992165{display:inline-flex!important;flex-direction:row!important;align-items:center;gap:10px;width:auto;padding:6px 16px;border-radius:40px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(4px)}
+.elementor-element-bc5caf0 .elementor-widget-text-editor,.elementor-element-b992165 .elementor-widget-text-editor{color:#fff!important;font-size:14px;font-weight:500}
+.evg_privacy_badge_dot{background:var(--gb)!important}
+.elementor-element-3d094e1 .elementor-widget-text-editor,.elementor-element-1acb0d40 .elementor-widget-text-editor{color:rgba(255,255,255,.9)}
+.elementor-element-3d094e1 .elementor-heading-title,.elementor-element-1acb0d40 .elementor-heading-title{font-size:clamp(34px,5vw,54px)}
+.elementor-element-047e808,.elementor-element-14a634a4{display:flex!important;flex-direction:row!important;width:auto!important;gap:14px;flex-wrap:wrap;margin-top:6px}
+.evg_refund_hero_sub{color:rgba(255,255,255,.9)}
+
+/* cards under privacy / refund hero */
+.elementor-element-21d45fc,.elementor-element-1cdf540f{display:flex!important;flex-direction:row!important;gap:20px;flex-wrap:wrap;margin-top:36px;padding:0!important}
+.elementor-element-21d45fc>.e-con,.elementor-element-1cdf540f>.e-con{flex:1 1 260px!important;width:auto!important;display:flex!important;flex-direction:row!important;align-items:flex-start;gap:16px;padding:24px;border-radius:16px;
+background:#fff;box-shadow:0 12px 30px -12px rgba(0,0,0,.35);border-top:4px solid var(--gb);transition:transform .25s ease,box-shadow .25s ease}
+.elementor-element-21d45fc>.e-con:hover,.elementor-element-1cdf540f>.e-con:hover{transform:translateY(-4px);box-shadow:0 18px 36px -12px rgba(0,0,0,.4)}
+.elementor-element-21d45fc .elementor-widget-heading .elementor-heading-title,.elementor-element-1cdf540f .elementor-widget-heading .elementor-heading-title{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;
+background:linear-gradient(135deg,var(--gb),var(--b));color:#fff;font-size:18px;flex:none}
+.elementor-icon-box-title{font-size:18px;font-weight:700;margin:0 0 6px;color:var(--ink)}
+.elementor-icon-box-description{margin:0;color:var(--mut);font-size:15px}
+
+/* policy body */
+.elementor-element-ee9f3f2,.elementor-element-7cdd12b9{padding:60px 0!important}
+.elementor-element-ee9f3f2 .e-con-inner>.e-con,.elementor-element-7cdd12b9 .e-con-inner>.e-con{background:#fff;border:1px solid var(--line);border-radius:18px;padding:36px 40px;box-shadow:0 10px 30px -14px rgba(0,0,0,.18)}
+.elementor-element-ee9f3f2 h5,.elementor-element-7cdd12b9 h5{color:var(--gb);font-size:18px;font-weight:700;margin:26px 0 8px}
+.elementor-element-ee9f3f2 li,.elementor-element-7cdd12b9 li{margin-bottom:4px}
+.important-box{background:linear-gradient(135deg,rgba(110,193,228,.14),rgba(97,206,112,.12));border-left:5px solid var(--gb);border-radius:12px;padding:18px 22px;margin:22px 0}
+.important-box h3{margin:0 0 6px;font-size:20px;color:var(--ink)}.important-box p{margin:0;color:var(--ink)}
+
+/* ---------- services: timeline, FAQ, CTA ---------- */
+.visa-process{padding:80px 20px;background:#fff}
+.visa-process .container,.egv-container{max-width:900px;margin:0 auto}
+.visa-process .section-title{text-align:center;margin-bottom:46px}
+.visa-process .section-title h2{font-size:clamp(28px,4vw,42px);font-weight:700;color:var(--ink);margin:0}
+.visa-process .section-title span{display:block;width:84px;height:4px;margin:16px auto 0;border-radius:20px;background:linear-gradient(90deg,var(--gb),var(--b))}
+.visa-process .timeline{position:relative;padding-left:6px}
+.visa-process .timeline::before{content:"";position:absolute;left:19px;top:10px;bottom:10px;width:3px;background:linear-gradient(var(--gb),var(--b));border-radius:3px}
+.visa-process .timeline-item{position:relative;display:flex;gap:26px;padding:0 0 30px 0}
+.visa-process .timeline-dot{flex:none;position:relative;z-index:1;width:28px;height:28px;margin:8px 0 0 6px;border-radius:50%;background:#fff;border:6px solid var(--g);box-shadow:0 0 0 6px rgba(110,193,228,.2)}
+.visa-process .timeline-item:nth-child(even) .timeline-dot{border-color:var(--bd);box-shadow:0 0 0 6px rgba(97,206,112,.2)}
+.visa-process .timeline-content{flex:1;background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 26px;box-shadow:0 8px 24px -14px rgba(0,0,0,.2);transition:transform .25s ease,box-shadow .25s ease}
+.visa-process .timeline-content:hover{transform:translateX(5px);box-shadow:0 14px 30px -14px rgba(0,0,0,.28)}
+.visa-process .timeline-content h3{margin:0 0 6px;font-size:20px;font-weight:700;color:var(--ink)}
+.visa-process .timeline-content p{margin:0;color:var(--mut);line-height:1.7}
+.elementor-element-b22a20c{padding:20px 0 70px}
+.visa-cta{position:relative;overflow:hidden;padding:90px 20px;text-align:center;color:#fff;background-image:var(--hero-overlay),var(--hero-img);background-size:cover;background-position:center}
+.visa-cta .overlay{position:absolute;inset:0;background:radial-gradient(60% 80% at 80% 20%,rgba(110,193,228,.28),transparent 70%)}
+.cta-content{position:relative;max-width:760px;margin:auto}
+.cta-content h2{color:#fff;font-size:clamp(28px,4vw,42px);font-weight:700;margin:0 0 12px}
+.cta-content p{color:rgba(255,255,255,.9);font-size:18px;margin:0 0 26px}
+.elementor-element-9176cd2{width:100%;padding:0!important}
+
+/* ---------- accordions (services, apply, terms) ---------- */
+.e-n-accordion{display:flex;flex-direction:column;gap:14px;max-width:900px;margin:0 auto}
+.e-n-accordion-item{background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 6px 20px -14px rgba(0,0,0,.25);overflow:hidden;transition:box-shadow .25s ease,border-color .25s ease}
+.e-n-accordion-item[open]{border-color:var(--gb);box-shadow:0 12px 28px -14px rgba(110,193,228,.35)}
+.e-n-accordion-item-title{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 24px;cursor:pointer;list-style:none;font-weight:600;color:var(--ink)}
+.e-n-accordion-item-title::-webkit-details-marker{display:none}
+.e-n-accordion-item-title:hover{color:var(--gb)}
+.e-n-accordion-item-title-text{font-size:17px;line-height:1.4}
+.e-n-accordion-item-title-icon{flex:none;display:inline-flex;width:30px;height:30px;align-items:center;justify-content:center;border-radius:50%;background:rgba(110,193,228,.16);color:var(--gb)}
+.e-n-accordion-item-title-icon svg{width:14px;height:14px;fill:currentColor}
+.e-n-accordion-item .e-opened{display:none}.e-n-accordion-item[open] .e-opened{display:inline-flex}.e-n-accordion-item[open] .e-closed{display:none}
+.e-n-accordion-item>.e-con{padding:0 24px 20px}
+.egv-faq-answer p{margin:0;color:var(--mut);line-height:1.75}
+.egv-section{padding:0}
+
+/* ---------- about ---------- */
+.elementor-element-66950f0{padding:80px 0 30px!important}
+.elementor-element-66950f0 .elementor-heading-title,.elementor-element-2901991 .elementor-heading-title{text-align:center;font-size:clamp(28px,4vw,42px)}
+.elementor-element-d718954{display:flex;flex-direction:row;flex-wrap:wrap;gap:40px;align-items:center;margin-top:30px}
+.elementor-element-2b78623,.elementor-element-5a030e1{flex:1 1 380px}
+.elementor-element-3523e2c img{width:100%;height:auto;border-radius:22px;box-shadow:0 20px 40px -18px rgba(0,0,0,.45);object-fit:cover;min-height:260px;background:var(--soft)}
+.elementor-element-2901991{background:var(--soft)!important;padding:80px 0!important}
+.elementor-element-0388d35{background:var(--ink)!important;padding:10px 0!important}
+.elementor-element-1752764{background-image:var(--hero-overlay),var(--hero-img)!important;background-size:cover!important;background-position:center!important;padding:90px 0!important;text-align:center}
+.elementor-element-1752764 .e-con-inner{display:flex;flex-direction:column;align-items:center;gap:14px;max-width:820px!important}
+.elementor-element-1752764 .elementor-heading-title{color:#fff!important;font-size:clamp(28px,4vw,42px)}
+.elementor-element-1752764 .elementor-widget-text-editor{color:rgba(255,255,255,.92);font-size:18px}
+
+/* ---------- apply hero ---------- */
+.visa-hero{position:relative;display:flex;align-items:center;justify-content:center;min-height:520px;padding:80px 20px;overflow:hidden}
+.visa-overlay{position:absolute;inset:0;background:radial-gradient(60% 70% at 85% 15%,rgba(110,193,228,.25),transparent 70%)}
+.visa-card{position:relative;max-width:820px;text-align:center;padding:48px 44px;border-radius:24px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(8px);box-shadow:0 24px 50px -20px rgba(0,0,0,.6)}
+.visa-card h1{color:#fff;font-size:clamp(30px,5vw,50px);font-weight:700;line-height:1.2;margin:0 0 16px}
+.visa-card p{color:rgba(255,255,255,.92);font-size:18px;line-height:1.7;margin:0 0 28px}
+.visa-buttons{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+.elementor-element-bd1f925{width:100%;padding:0!important}
+.elementor-element-cf4bec9{padding:70px 0 20px!important;text-align:center}
+.apply-container{padding:0}.apply-faq-item{padding:0}
+footer.footer:empty{display:none}
+.elementor-element-2515186{padding:60px 0 80px!important}.elementor-element-2515186 .elementor-heading-title{text-align:center;font-size:clamp(28px,4vw,40px)}
+
+/* ---------- contact: form styling (same field style as EuroBrit) ---------- */
+[data-elementor-type="wp-page"] .elementor-field-group{margin-bottom:16px}
+[data-elementor-type="wp-page"] .elementor-field-label{display:block;margin-bottom:6px;font-size:14px;font-weight:600;color:var(--ink)}
+[data-elementor-type="wp-page"] .elementor-field-textual,[data-elementor-type="wp-page"] .elementor-field-group select,[data-elementor-type="wp-page"] .elementor-field-group textarea{width:100%;padding:13px 16px;border:1.5px solid #d9dee2;border-radius:12px;background:#fff;color:var(--ink);font-family:inherit;font-size:15px;
+transition:border-color .2s ease,box-shadow .2s ease}
+[data-elementor-type="wp-page"] .elementor-field-textual:focus,[data-elementor-type="wp-page"] .elementor-field-group select:focus,[data-elementor-type="wp-page"] .elementor-field-group textarea:focus{outline:0;border-color:var(--gb);box-shadow:0 0 0 4px rgba(110,193,228,.2)}
+[data-elementor-type="wp-page"] .elementor-field-textual::placeholder{color:#9aa1a6}
+[data-elementor-type="wp-page"] .elementor-field-type-submit .elementor-button{width:100%;border-radius:40px;padding:16px;font-size:16px}
+[data-elementor-type="wp-page"] .elementor-field-type-submit .elementor-button:hover{background:var(--ink);border-color:var(--ink)}
+.select-caret-down-wrapper{position:relative}
+.contact-form-image img{width:100%;height:auto;border-radius:20px;object-fit:cover;box-shadow:0 18px 40px -18px rgba(0,0,0,.4)}
+.elementor-element-25b9a27 .elementor-heading-title,.elementor-element-9f6476d .elementor-heading-title{color:var(--ink)}
+.elementor-element-9f6476d{background:#fff!important}
+.elementor-element-9f6476d{border-radius:20px;box-shadow:0 20px 44px -22px rgba(0,0,0,.35);padding:32px!important}
+.elementor-element-2bc50b0{background:var(--ink)!important;padding:70px 0!important}
+.elementor-element-2bc50b0 .elementor-heading-title{color:#fff}.elementor-element-2bc50b0 .elementor-widget-text-editor{color:rgba(255,255,255,.8)}
+
+/* ---------- terms ---------- */
+.elementor-element-fbe4cad{padding:50px 0 10px!important}
+.elementor-element-fbe4cad .elementor-heading-title{color:var(--gb)!important;font-size:clamp(26px,3.5vw,36px)}
+.elementor-element-36d558a{padding:10px 0 60px!important}
+.egv-cta{margin-top:20px}
+
+@media (max-width:767px){
+ .elementor-element-03e0a92,.elementor-element-e925a09{padding:70px 0!important}
+ .elementor-element-3d094e1,.elementor-element-1acb0d40{padding:60px 0!important}
+ .visa-card{padding:30px 22px}.timeline-content{padding:16px 18px}
+ .elementor-element-ee9f3f2 .e-con-inner>.e-con,.elementor-element-7cdd12b9 .e-con-inner>.e-con{padding:24px 20px}
+}
+
+/* leftover coral tint on icon circles -> brand green tint */
+.icon-circle{background:rgba(110,193,228,.16)!important}
+
+/* buttons keep their natural width (Elementor "justify" alignment was stretching them) */
+[data-elementor-type="wp-page"] .elementor-widget-button{width:auto}
+[data-elementor-type="wp-page"] .elementor-align-justify .elementor-button{width:auto}
+.elementor-element-31489c2{background:#fff}.visa-process{background:transparent}
+
+/* Elementor's default 10px side padding on parent containers was leaving gaps beside full-width bands */
+[data-elementor-type="wp-page"] .e-con.e-parent{padding-inline:0}
+.elementor-element-d718954>.e-con-inner{flex-direction:row!important;flex-wrap:wrap;align-items:center;gap:40px}
+.elementor-element-d718954>.e-con-inner>.e-con{flex:1 1 380px;width:auto!important}
+.elementor-element-3523e2c img{height:420px;max-height:420px}
+.elementor-element-0388d35 .counter,.elementor-element-0388d35 [class*=counter] .counter{color:var(--gb)!important}
+
+/* stray inline body padding from page widgets pushed every band in from the edges */
+body:not(.home){padding:0!important}
+
+/* ---------- apply: country tabs (Schengen / Australia) ---------- */
+[data-elementor-type="wp-page"] [role="tablist"]{display:flex!important;flex-direction:row!important;justify-content:center;flex-wrap:wrap;gap:12px;margin:0 0 30px;width:100%}
+[data-elementor-type="wp-page"] [role="tab"]{width:auto!important;display:inline-flex;align-items:center;justify-content:center;padding:12px 30px;border-radius:40px;border:2px solid var(--g);background:#fff;color:var(--g);
+font-family:inherit;font-size:16px;cursor:pointer;position:relative;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease,background-color .25s ease,color .25s ease}
+[data-elementor-type="wp-page"] [role="tab"] *{color:inherit}
+[data-elementor-type="wp-page"] [role="tab"]:hover{transform:translateY(-3px);box-shadow:0 10px 22px -8px rgba(97,206,112,.5),0 0 10px rgba(97,206,112,.4)}
+[data-elementor-type="wp-page"] [role="tab"][aria-selected="true"],[data-elementor-type="wp-page"] [role="tab"].e--selected{background:var(--g);color:#fff}
+[data-elementor-type="wp-page"] [role="tab"]:focus-visible{outline:3px solid var(--b);outline-offset:3px}
+
+/* ---------- contact: image card + form card side by side (EuroBrit contact layout) ---------- */
+.elementor-element-71b8a9a{padding:70px 0!important}
+.elementor-element-71b8a9a>.e-con-inner{flex-direction:row!important;flex-wrap:wrap;gap:30px;align-items:stretch}
+.elementor-element-71b8a9a>.e-con-inner>.e-con{flex:1 1 420px;width:auto!important;min-width:0}
+.elementor-element-a8ab7b0{justify-content:flex-end;gap:18px;padding:36px!important;border-radius:20px;min-height:520px;color:#fff;
+background-image:linear-gradient(180deg,rgba(45,49,52,.25) 0%,rgba(45,49,52,.85) 100%),url("../wp-content/uploads/2026/05/imageye___-_imgi_10_contectus-CfVxmbW4.webp")!important;
+background-size:cover!important;background-position:center!important;box-shadow:0 20px 44px -22px rgba(0,0,0,.5)}
+.elementor-element-a8ab7b0 .elementor-heading-title{color:#fff!important}
+.elementor-element-a8ab7b0 .contact-form-social p,.elementor-element-a8ab7b0 .elementor-widget-text-editor{color:rgba(255,255,255,.92)!important;margin:0}
+.elementor-element-a8ab7b0 .elementor-social-icon{transition:transform .25s ease,box-shadow .25s ease}
+.elementor-element-a8ab7b0 .elementor-social-icon:hover{transform:translateY(-4px) scale(1.06);box-shadow:0 8px 18px -6px rgba(0,0,0,.5)}
+.elementor-element-9f6476d{justify-content:flex-start}
+
+/* contact: section titles sit on dark bands but a later inline rule made them dark ink */
+.elementor-335 h2.section-title{color:#fff!important;font-size:32px;text-align:left}
+.elementor-335 .contact-heading{color:var(--gb)}
+
+/* privacy / refund: badge on one line; card text fills the row next to the letter badge */
+.elementor-element-bc5caf0 .elementor-widget,.elementor-element-b992165 .elementor-widget{width:auto}
+.elementor-element-bc5caf0 .elementor-widget-text-editor p,.elementor-element-b992165 .elementor-widget-text-editor p{margin:0;white-space:nowrap}
+.elementor-element-21d45fc .elementor-widget,.elementor-element-1cdf540f .elementor-widget{width:auto}
+.elementor-element-21d45fc .elementor-widget-icon-box,.elementor-element-1cdf540f .elementor-widget-icon-box{flex:1}
+.elementor-element-21d45fc .e-con-full,.elementor-element-1cdf540f .e-con-full{min-height:0}

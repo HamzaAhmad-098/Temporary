@@ -1,0 +1,9 @@
+/* Icon-font mapping: the plugin icon fonts (xi/jki) are missing offline, so map them to bundled Font Awesome (same SVG-style icons as the reference site). */
+i.xi,i.jki{font-style:normal!important;display:inline-flex;align-items:center;justify-content:center;line-height:1}
+i.xi::before,i.jki::before{font-family:"Font Awesome 7 Free"!important;font-weight:900!important;font-style:normal}
+i.xi-pin-location::before{content:"\f3c5"!important}
+i.xi-email::before,i.jki-mail-line::before{content:"\f0e0"!important}
+i.xi-phone-6::before,i.jki-phone-line::before{content:"\f095"!important}
+i.jki-right-arrow-7::before{content:"\f061"!important;font-size:.9em}
+i.jki-telegram::before{content:"\f1d8"!important}
+.elementor-icon-list-icon i::before{min-width:1.15em;text-align:center}
