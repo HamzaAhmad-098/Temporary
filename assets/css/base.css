@@ -215,3 +215,21 @@ strong {
     animation-duration: 0.01ms !important;
   }
 }
+
+/* ---- Global overflow guard (mobile) ------------------------------------ */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Prevent any child from causing horizontal scroll */
+#page {
+  overflow-x: hidden;
+}
+
+/* Tighter gutter on very small screens */
+@media (max-width: 375px) {
+  :root {
+    --gutter: 16px;
+  }
+}

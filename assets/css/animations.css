@@ -239,13 +239,15 @@
   filter: grayscale(0);
 }
 
-/* ---- Hero copy entrance ----------------------------------------------- */
-.hero__copy {
-  animation: hero-copy-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.15s both;
-}
+/* ---- Hero copy entrance (desktop only to avoid mobile flash) ---------- */
+@media (min-width: 641px) {
+  .hero__copy {
+    animation: hero-copy-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.15s both;
+  }
 
-.hero .showcase {
-  animation: hero-img-in 1s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both;
+  .hero .showcase {
+    animation: hero-img-in 1s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both;
+  }
 }
 
 @keyframes hero-copy-in {
@@ -305,3 +307,84 @@
   animation: pulse-ring 2.4s ease-out 1.8s 3;
 }
 
+
+/* =====================================================================
+   RESPONSIVE — animations.css
+   ===================================================================== */
+
+/* Stats bar: 4 col → 2×2 on mobile */
+@media (max-width: 640px) {
+  .stats-bar__inner {
+    grid-template-columns: repeat(2, 1fr);
+    padding-block: 36px;
+  }
+
+  .stats-bar__item:nth-child(3),
+  .stats-bar__item:nth-child(4) {
+    border-top: 1px solid rgba(255,255,255,0.12);
+  }
+
+  .stats-bar__item:nth-child(3) {
+    border-left: none;
+  }
+
+  .stats-bar__item:nth-child(4) {
+    border-left: 1px solid rgba(255,255,255,0.12);
+  }
+
+  .stats-bar__number {
+    font-size: 2.75rem;
+  }
+
+  .stats-bar__label {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+  }
+
+  /* Brand ticker items smaller */
+  .brand-ticker__item {
+    height: 72px;
+    padding: 10px 20px;
+  }
+
+  .brand-ticker__item img {
+    max-width: 100px;
+    max-height: 44px;
+  }
+
+  /* Customer ticker items smaller */
+  .customer-ticker__item {
+    height: 72px;
+    padding: 10px 18px;
+    margin-right: 12px;
+  }
+
+  .customer-ticker__item img {
+    max-width: 100px;
+    max-height: 44px;
+  }
+}
+
+@media (max-width: 375px) {
+  .stats-bar__inner {
+    padding-block: 28px;
+  }
+
+  .stats-bar__number {
+    font-size: 2.25rem;
+  }
+
+  /* Ticker category bar font */
+  .ticker-track span {
+    font-size: 0.75rem !important;
+    padding: 0 18px !important;
+  }
+}
+
+/* Disable translate reveals on very small to avoid flicker */
+@media (max-width: 480px) {
+  .reveal--left,
+  .reveal--right {
+    transform: translateY(24px);
+  }
+}

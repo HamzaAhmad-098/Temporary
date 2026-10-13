@@ -129,3 +129,12 @@
     flex: 1 1 100%;
   }
 }
+
+/* ---- Extra mobile fixes (appended) ------------------------------------- */
+@media (max-width: 560px) {
+  /* Contact form buttons full-width */
+  .contact-form .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

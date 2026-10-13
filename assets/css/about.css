@@ -193,3 +193,18 @@
     gap: 6px;
   }
 }
+
+/* ---- Extra mobile fixes (appended) ------------------------------------- */
+@media (max-width: 640px) {
+  .profile,
+  .leader,
+  .identity {
+    gap: 28px;
+  }
+
+  /* Stats on about page */
+  .kpi-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
+  }
+}
