@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% from "partials/icons.html" import icon %}
+{% from "partials/logo_wall.html" import logo_wall %}
+
+{% block title %}About us — {{ site.name }}{% endblock %}
+{% block description %}Dynamic Drive is a professional manufacturer of motors and components; Dynamic Traders imports and distributes them in Pakistan. Quality without compromise.{% endblock %}
+{% block styles %}<link rel="stylesheet" href="{{ root }}assets/css/about.css">{% endblock %}
+
+{% block main %}
+<section class="page-head">
+  <div class="page-head__grid" aria-hidden="true"></div>
+  <div class="container page-head__inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol><li><a href="{{ root }}index.html">Home</a></li><li aria-current="page">About us</li></ol>
+    </nav>
+    <h1 class="page-head__title">About us</h1>
+    <p class="page-head__lede">{{ site.tagline }}.</p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="profile-title">
+  <div class="container profile">
+    <div class="profile__text">
+      <p class="eyebrow">Company profile</p>
+      <h2 id="profile-title" class="section-head__title">Manufacturer, importer and after-sales partner</h2>
+      <p>Dynamic Drive is a professional manufacturer specialising in the R&amp;D, manufacture, sales and after-sales service of motors and their components.</p>
+      <p>{{ site.legal_name }}® imports automation motors, industrial gear motors and industrial VFDs (inverters) — shutter motors, swing gate motors, sliding gate motors, tubular motors, central mechanical motors, sliding gear racks and all accessories — from all over the world.</p>
+    </div>
+    <div class="profile__range">
+      <h3 class="profile__range-title">Our range includes</h3>
+      <ul role="list">
+        {% for item in site.about_range %}<li>{{ icon('check', 16) }}{{ item }}</li>{% endfor %}
+        <li class="profile__more">…and more</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="principle" aria-labelledby="principle-title">
+  <div class="container principle__inner">
+    <p class="eyebrow eyebrow--light">Our principle</p>
+    <h2 id="principle-title" class="principle__title">“Quality without Compromise”</h2>
+    <p>Long service life, up-to-date technologies and extreme quality are the main features of our products, and they keep Dynamic Drives standing out from the crowd. Our passion, coupled with our expertise, drives us to deliver better results and to stay at the forefront of our industry.</p>
+    <p>Based in Shenzhen, China — the city of automation — we aim to be the benchmark of quality in the roller shutter industry.</p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="identity-title">
+  <div class="container identity">
+    <div class="identity__seal">
+      <img src="{{ root }}assets/img/{{ seal.file }}" width="{{ seal.width }}" height="{{ seal.height }}" alt="Dynamic Traders — Dynamic Drive Automation Centre seal" loading="lazy">
+    </div>
+    <div class="identity__text">
+      <p class="eyebrow">Two names, one company</p>
+      <h2 id="identity-title" class="section-head__title">Dynamic Drive and Dynamic Traders</h2>
+      <dl class="identity__defs">
+        <div><dt>Dynamic Drive</dt><dd>The manufacturing brand and logo — motors and their components, from design through after-sales service.</dd></div>
+        <div><dt>Dynamic Traders®</dt><dd>The importing and distributing company in Lahore, Pakistan, and the authorised distributor for Kehong and M-Driver.</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="section section--white" aria-labelledby="lead-title">
+  <div class="container leader">
+    <div>
+      <p class="eyebrow">Leadership</p>
+      <h2 id="lead-title" class="section-head__title">{{ site.director.name }}</h2>
+      <p class="leader__role">{{ site.director.title }}, {{ site.legal_name }}</p>
+    </div>
+    <ul class="leader__contact" role="list">
+      <li>{{ icon('phone', 18) }}<span>{% for p in site.phones %}<a href="tel:{{ p.tel }}">{{ p.label }}</a>{% if not loop.last %} / {% endif %}{% endfor %}<br><a href="tel:{{ site.landline.tel }}">{{ site.landline.label }}</a></span></li>
+      <li>{{ icon('mail', 18) }}<a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+      <li>{{ icon('globe', 18) }}<span>{{ site.domain }}</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="customers-title">
+  <div class="container">
+    <header class="section-head">
+      <p class="eyebrow">Our valued customers</p>
+      <h2 id="customers-title" class="section-head__title">Who we work with</h2>
+    </header>
+    {{ logo_wall(customers, root) }}
+  </div>
+</section>
+
+{% include "partials/cta.html" %}
+{% endblock %}

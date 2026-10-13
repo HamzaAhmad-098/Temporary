@@ -1,0 +1,1086 @@
+{
+ "categories": [
+  {
+   "slug": "shutters-doors",
+   "name": "Shutter & Door Motors",
+   "blurb": "Roller-shutter, central, tubular, high-speed and automatic sliding door drives."
+  },
+  {
+   "slug": "gates-barriers",
+   "name": "Gate & Barrier Automation",
+   "blurb": "Sliding and swing gate motors, gear racks and parking barriers."
+  },
+  {
+   "slug": "industrial-drives",
+   "name": "Industrial Drives",
+   "blurb": "Gear reducers, geared motors and variable frequency drives."
+  },
+  {
+   "slug": "remotes-controls",
+   "name": "Remotes & Controls",
+   "blurb": "Remotes, push-button stations, Wi-Fi modules and receiver kits."
+  },
+  {
+   "slug": "sensors",
+   "name": "Sensors",
+   "blurb": "Infrared and microwave radar sensors for automatic doors and gates."
+  },
+  {
+   "slug": "chains",
+   "name": "Chains",
+   "blurb": "Manual shutter chain and a full range of roller chains and locks."
+  }
+ ],
+ "products": [
+  {
+   "slug": "shutter-motor",
+   "name": "Shutter Motor",
+   "category": "shutters-doors",
+   "badge": "600–2000 kg · single & three phase",
+   "summary": "Fully copper-wound roller shutter motor with overheat protection and mechanical limit switches.",
+   "intro": [
+    "A heavy-duty roller shutter motor built for long service life. The winding is made entirely of copper for higher capacity and more durable use, and every unit carries built-in protection and manual control."
+   ],
+   "features_title": "Functions",
+   "features": [
+    {
+     "title": "All-copper motor",
+     "text": "The motor is made entirely of copper, giving it a higher capacity and more durable use."
+    },
+    {
+     "title": "Overheat protection",
+     "text": "A built-in mechanism protects the motor: the power supply is switched off immediately if the temperature reaches 110 °C, and the motor works again once it has dropped to 70 °C."
+    },
+    {
+     "title": "Mechanical limit switch",
+     "text": "Precisely and safely adjusts the door position in both the up and down directions, with a stability control feature that can be operated remotely."
+    },
+    {
+     "title": "Manual button",
+     "text": "Up / Stop / Down control for opening and closing the rolling door."
+    }
+   ],
+   "stock": {
+    "title": "Ready stock",
+    "items": [
+     "600 kg",
+     "800 kg",
+     "1000 kg",
+     "1500 kg",
+     "2000 kg"
+    ],
+    "note": "Available in single and three phase."
+   },
+   "distributor": "KEHONG Technology Co., LTD",
+   "images": [
+    {
+     "file": "shutter-motor/kit.webp",
+     "alt": "Shutter motor with remote controllers, control box and chain drive",
+     "width": 436,
+     "height": 436
+    }
+   ],
+   "keywords": "roller shutter rolling door kehong copper"
+  },
+  {
+   "slug": "sliding-gate-motor",
+   "name": "Sliding Gate Motor",
+   "category": "gates-barriers",
+   "badge": "600–5000 kg · AC / DC",
+   "summary": "AC or DC sliding gate operator with integrated control panel, all-metal gears and manual override.",
+   "intro": [
+    "A sliding gate operator in AC and DC versions, supplied with an integrated control panel and designed for continuous, dependable duty."
+   ],
+   "features_title": "Features",
+   "features": [
+    {
+     "title": "AC / DC motor",
+     "text": "Available as an AC or DC motor with an integrated control panel."
+    },
+    {
+     "title": "Manual override",
+     "text": "Built-in manual override with two unique override keys, supplied for use in an emergency or power outage."
+    },
+    {
+     "title": "All-metal gears",
+     "text": "Long-lasting, sturdy all-metal gears."
+    },
+    {
+     "title": "Adjustable sensitivity",
+     "text": "Adjustable resistance sensitivity and an auto-closing delay period."
+    },
+    {
+     "title": "Obstruction response",
+     "text": "If the gate meets an obstruction while opening or closing, the motor stops or reverses."
+    },
+    {
+     "title": "Magnetic limit",
+     "text": "A trustworthy magnetic limit is provided."
+    },
+    {
+     "title": "Solar option",
+     "text": "Solar panels and backup batteries are offered for DC sliding gate motors."
+    }
+   ],
+   "stock": {
+    "title": "Ready stock",
+    "items": [
+     "600 kg",
+     "1000 kg",
+     "1200 kg",
+     "1500 kg",
+     "2000 kg",
+     "3500 kg",
+     "5000 kg"
+    ]
+   },
+   "images": [
+    {
+     "file": "sliding-gate-motor/housing.webp",
+     "alt": "Sliding gate motor housing with warning label and override key",
+     "width": 409,
+     "height": 508
+    },
+    {
+     "file": "sliding-gate-motor/open.webp",
+     "alt": "Sliding gate motor with cover removed showing control board and motor",
+     "width": 344,
+     "height": 383
+    }
+   ],
+   "keywords": "gate opener operator solar dc ac"
+  },
+  {
+   "slug": "swing-gate-motor",
+   "name": "Swing Gate Motor",
+   "category": "gates-barriers",
+   "badge": "350–600 kg per leaf",
+   "summary": "Linear-arm swing gate operators supplied as a complete kit with control box, remotes and brackets.",
+   "intro": [
+    "Swing gate motors supplied as a complete two-leaf kit: two linear actuators, control box, remote controllers and mounting brackets."
+   ],
+   "features_title": "Benefits",
+   "features": [
+    {
+     "title": "Convenience",
+     "text": "Remote operation allows easy opening and closing of the gate without leaving your vehicle."
+    },
+    {
+     "title": "Enhanced security",
+     "text": "Acts as a barrier against unauthorised access, improving property security."
+    },
+    {
+     "title": "Aesthetic appeal",
+     "text": "Adds a sophisticated look to your property, enhancing curb appeal."
+    },
+    {
+     "title": "Less maintenance",
+     "text": "Typically requires less maintenance than sliding gates because there are fewer moving parts."
+    },
+    {
+     "title": "Cost-effective",
+     "text": "Generally more affordable to install and maintain than other automatic gate systems."
+    }
+   ],
+   "stock": {
+    "title": "Ready stock",
+    "items": [
+     "350 kg per leaf",
+     "450 kg per leaf",
+     "600 kg per leaf"
+    ]
+   },
+   "images": [
+    {
+     "file": "swing-gate-motor/kit.webp",
+     "alt": "Swing gate motor kit with two linear actuators, control box, remotes and brackets",
+     "width": 444,
+     "height": 444
+    }
+   ],
+   "keywords": "gate opener leaf actuator arm"
+  },
+  {
+   "slug": "tubular-motor",
+   "name": "Tubular Motor",
+   "category": "shutters-doors",
+   "badge": "25–59 mm · 10–240 N·m",
+   "summary": "Electric motor housed inside a cylindrical tube for roller doors, awnings, screens and blinds.",
+   "intro": [
+    "An electric motor housed inside a cylindrical form factor is called a tubular motor. The motor sits inside the roller tube, which keeps installations compact and tidy."
+   ],
+   "features_title": "Commonly used for",
+   "features": [
+    {
+     "title": "Roller doors / roller shutters",
+     "text": ""
+    },
+    {
+     "title": "Awnings",
+     "text": ""
+    },
+    {
+     "title": "Projection screens",
+     "text": ""
+    },
+    {
+     "title": "Window curtains",
+     "text": ""
+    },
+    {
+     "title": "Blinds",
+     "text": ""
+    }
+   ],
+   "stock": {
+    "title": "Ready stock",
+    "items": [
+     "25 mm",
+     "35 mm",
+     "45 mm",
+     "59 mm"
+    ],
+    "note": "Torque range 10 N·m – 240 N·m. Crank shaft / manual chain override."
+   },
+   "images": [
+    {
+     "file": "tubular-motor/green-tubular-motor.webp",
+     "alt": "Tubular motor with head and drive end details",
+     "width": 713,
+     "height": 432
+    },
+    {
+     "file": "tubular-motor/blue-tubular-motor.webp",
+     "alt": "Tubular motor with square mounting head",
+     "width": 301,
+     "height": 256
+    }
+   ],
+   "keywords": "awning blind curtain screen tube"
+  },
+  {
+   "slug": "hi-speed-door-servo-motor",
+   "name": "Hi-Speed Door Servo Motor",
+   "category": "shutters-doors",
+   "badge": "3000 RPM · 1:20 gearbox",
+   "summary": "Servo drive system with integrated gearbox and digital controller for high-frequency industrial doors.",
+   "intro": [
+    "Engineered for rapid response and high-frequency operation, this high-speed door servo motor system provides precise control and dependable performance for industrial high-speed roll-up doors, rapid PVC curtain doors and automated entrance systems."
+   ],
+   "features_title": "System",
+   "features": [
+    {
+     "title": "Motor speed",
+     "text": "3000 RPM high-speed servo motor delivering rapid open / close cycle response times."
+    },
+    {
+     "title": "Reduction gearbox",
+     "text": "Integrated 1:20 gear-ratio gearbox for optimised output torque and controlled door movement."
+    },
+    {
+     "title": "Control unit",
+     "text": "Smart servo controller box with an intuitive digital user interface, emergency stop button and clear push-button controls."
+    }
+   ],
+   "specs": [
+    [
+     "Motor speed",
+     "3000 RPM"
+    ],
+    [
+     "Gear ratio",
+     "1:20"
+    ],
+    [
+     "Controller",
+     "Digital interface, emergency stop, push-button controls"
+    ]
+   ],
+   "images": [
+    {
+     "file": "hi-speed-door-servo-motor/motor-and-controller.webp",
+     "alt": "Servo motor with worm gearbox beside the smart servo controller box",
+     "width": 551,
+     "height": 400
+    }
+   ],
+   "keywords": "servo high speed pvc curtain roll up"
+  },
+  {
+   "slug": "central-mechanical-motor",
+   "name": "Central Mechanical Motor",
+   "category": "shutters-doors",
+   "badge": "60-120H · 60-180H",
+   "summary": "Central drive motor for shutter doors and front shops — simple to install and easy to service.",
+   "intro": [
+    "Central motors are simpler to install and service than other types of motor, and the market has embraced them as a popular option. With a history of around 50 years worldwide, they are now commonly used for shutter doors and front shops."
+   ],
+   "stock": {
+    "title": "Ready stock",
+    "items": [
+     "60-120H",
+     "60-180H"
+    ]
+   },
+   "images": [
+    {
+     "file": "central-mechanical-motor/central-motor.webp",
+     "alt": "Central mechanical motor with brake and orange control housing",
+     "width": 410,
+     "height": 284
+    }
+   ],
+   "keywords": "shutter doors front shop central"
+  },
+  {
+   "slug": "auto-sliding-door",
+   "name": "Auto Sliding Door",
+   "category": "shutters-doors",
+   "badge": "Operators · sensors · remotes",
+   "summary": "Automatic sliding door operators with sensor systems for airports, malls, hospitals and offices.",
+   "intro": [
+    "Complete automatic sliding door systems — operator, track, sensors and remote controllers — for busy commercial entrances."
+   ],
+   "features_title": "Highlights",
+   "features": [
+    {
+     "title": "Automatic sliding doors",
+     "text": "Smooth and silent operation, ideal for high-traffic areas like airports, shopping malls, hospitals and office buildings."
+    },
+    {
+     "title": "Sensor systems",
+     "text": "Advanced sensors ensure the doors open and close only when needed, improving energy efficiency and reducing wear."
+    },
+    {
+     "title": "Safety & durability",
+     "text": "Built with safety mechanisms and durability in mind, meeting international quality and safety standards."
+    }
+   ],
+   "images": [
+    {
+     "file": "auto-sliding-door/operator-and-sensors.webp",
+     "alt": "Automatic sliding door operator, track, sensors and remote controllers",
+     "width": 551,
+     "height": 532
+    },
+    {
+     "file": "auto-sliding-door/entrance-system.webp",
+     "alt": "Automatic sliding door overhead track above a glass entrance",
+     "width": 500,
+     "height": 500
+    }
+   ],
+   "keywords": "automatic door entrance deper airport hospital mall"
+  },
+  {
+   "slug": "parking-barriers",
+   "name": "Parking Barriers",
+   "category": "gates-barriers",
+   "badge": "Sensor · ticket · remote · ANPR",
+   "summary": "Automatic barrier systems that regulate vehicle entry and exit for car parks and restricted areas.",
+   "intro": [
+    "Parking barriers are an essential component in managing and controlling access to parking lots, garages and restricted areas. These automated systems regulate the entry and exit of vehicles, ensuring security, proper management of parking spaces and smooth traffic flow."
+   ],
+   "features_title": "How they work",
+   "features": [
+    {
+     "title": "Automated operation",
+     "text": "Parking barriers are usually equipped with advanced automation that allows seamless operation. The barrier arm rises or lowers automatically when a vehicle approaches, triggered by sensors, ticketing systems or remote access controls."
+    },
+    {
+     "title": "ANPR integration",
+     "text": "Some systems integrate with Automatic Number Plate Recognition technology, allowing frictionless access based on the vehicle’s registration plate."
+    }
+   ],
+   "images": [
+    {
+     "file": "parking-barriers/barrier-arm.webp",
+     "alt": "Parking barrier with red and white striped arm",
+     "width": 201,
+     "height": 97
+    },
+    {
+     "file": "parking-barriers/barrier-rfid.webp",
+     "alt": "Black parking barrier cabinet with RFID reader",
+     "width": 185,
+     "height": 140
+    },
+    {
+     "file": "parking-barriers/barrier-raised-lowered.webp",
+     "alt": "Orange barrier shown with arm raised and lowered",
+     "width": 192,
+     "height": 208
+    },
+    {
+     "file": "parking-barriers/swing-turnstile.webp",
+     "alt": "Pedestrian swing turnstile gates",
+     "width": 225,
+     "height": 161
+    }
+   ],
+   "keywords": "car park boom gate anpr zkteco turnstile"
+  },
+  {
+   "slug": "industrial-gear-reducers-motors",
+   "name": "Industrial Gear Reducers / Motors",
+   "category": "industrial-drives",
+   "badge": "0.25 kW – 180 kW",
+   "summary": "Worm and helical gearboxes, geared motors and induction motors for conveyors, cranes and production lines.",
+   "intro": [
+    "Industrial gear motors are primarily used where high torque output is needed at a lower rotational speed. That makes them ideal for conveyors, cranes, elevators, robotic systems, automation equipment, packaging machines and production lines across food & beverage, automotive, pharmaceutical and logistics, where precise movement and controlled speed are required."
+   ],
+   "features_title": "Range",
+   "features": [
+    {
+     "title": "WP type gear box",
+     "text": ""
+    },
+    {
+     "title": "NMRV series gear box",
+     "text": ""
+    },
+    {
+     "title": "Small reduction motor",
+     "text": ""
+    },
+    {
+     "title": "Induction motor",
+     "text": ""
+    },
+    {
+     "title": "Helical gear motor",
+     "text": ""
+    }
+   ],
+   "stock": {
+    "title": "Ready stock",
+    "items": [
+     "0.25 kW ~ 180 kW"
+    ]
+   },
+   "images": [
+    {
+     "file": "industrial-gear-reducers-motors/wp-gearbox.webp",
+     "alt": "WP type worm gear box",
+     "width": 214,
+     "height": 225
+    },
+    {
+     "file": "industrial-gear-reducers-motors/nmrv-gearbox.webp",
+     "alt": "NMRV series worm gear box",
+     "width": 241,
+     "height": 227
+    },
+    {
+     "file": "industrial-gear-reducers-motors/small-reduction-motor.webp",
+     "alt": "Small reduction motor",
+     "width": 219,
+     "height": 173
+    },
+    {
+     "file": "industrial-gear-reducers-motors/induction-motor.webp",
+     "alt": "Three-phase induction motor",
+     "width": 218,
+     "height": 178
+    },
+    {
+     "file": "industrial-gear-reducers-motors/helical-gear-motor.webp",
+     "alt": "Helical gear motor",
+     "width": 204,
+     "height": 191
+    }
+   ],
+   "keywords": "gearbox reducer wp nmrv helical induction kw"
+  },
+  {
+   "slug": "m-driver-vfd",
+   "name": "M-Driver Motor VFD",
+   "category": "industrial-drives",
+   "badge": "Speed · direction · timer",
+   "summary": "Variable frequency drives to control motor speed, frequency and direction of rotation.",
+   "intro": [
+    "Variable Frequency Drives (VFDs) are used with motors to control their speed and direction. If a motor is running clockwise, a VFD lets you operate it anticlockwise as well."
+   ],
+   "features_title": "What a VFD lets you do",
+   "features": [
+    {
+     "title": "Control speed",
+     "text": "Adjust the running speed of the motor."
+    },
+    {
+     "title": "Control frequency",
+     "text": "Set and change the frequency supplied to the motor."
+    },
+    {
+     "title": "Reverse direction",
+     "text": "Run the motor in either direction."
+    },
+    {
+     "title": "Timed start / stop",
+     "text": "Set a timer for the motor to stop or start."
+    }
+   ],
+   "distributor": "Shenzhen M-Driver Technology Co., LTD",
+   "images": [
+    {
+     "file": "m-driver-vfd/vfd.webp",
+     "alt": "M-Driver VFD with keypad display and a motor",
+     "width": 415,
+     "height": 459
+    }
+   ],
+   "keywords": "inverter vfd drive frequency mdriver m-driver"
+  },
+  {
+   "slug": "sliding-gear-rack",
+   "name": "Sliding Gear Rack",
+   "category": "gates-barriers",
+   "badge": "08 · 10 · 12 mm",
+   "summary": "Galvanised, zinc-coated gear rack for sliding gate motors — rust-resistant and imported.",
+   "intro": [
+    "Gear rack for sliding gate motors, supplied with fixing bolts."
+   ],
+   "features_title": "Key features",
+   "features": [
+    {
+     "title": "Chinese imported",
+     "text": ""
+    },
+    {
+     "title": "Non-rusted material",
+     "text": ""
+    },
+    {
+     "title": "Galvanised steel",
+     "text": ""
+    },
+    {
+     "title": "Zinc coated",
+     "text": ""
+    }
+   ],
+   "stock": {
+    "title": "Ready stock",
+    "items": [
+     "08 mm",
+     "10 mm",
+     "12 mm"
+    ]
+   },
+   "images": [
+    {
+     "file": "sliding-gear-rack/rack-with-fixings.webp",
+     "alt": "Galvanised gear rack with brass fixing pins",
+     "width": 499,
+     "height": 499
+    },
+    {
+     "file": "sliding-gear-rack/rack-section.webp",
+     "alt": "Gear rack section with fixing bolt",
+     "width": 496,
+     "height": 501
+    }
+   ],
+   "keywords": "rack gate zinc galvanised"
+  },
+  {
+   "slug": "manual-shutter-chain",
+   "name": "Manual Shutter Chain",
+   "category": "chains",
+   "badge": "Non-rusted · imported",
+   "summary": "Non-rusted hand chain for manually operated rolling shutters.",
+   "intro": [
+    "You can roll manual roller shutters up and down as needed by turning a handle and the gears within the winder box, which is located inside your home on one side of each opening."
+   ],
+   "features_title": "Specification",
+   "features": [
+    {
+     "title": "Manual rolling shutter chain (Chinese)",
+     "text": ""
+    },
+    {
+     "title": "Non-rusted material",
+     "text": ""
+    }
+   ],
+   "images": [
+    {
+     "file": "manual-shutter-chain/hand-chain.webp",
+     "alt": "Hand operating a manual shutter chain",
+     "width": 500,
+     "height": 500
+    },
+    {
+     "file": "manual-shutter-chain/winder-box.webp",
+     "alt": "Manual shutter winder box and chain on a roller shutter",
+     "width": 380,
+     "height": 360
+    }
+   ],
+   "keywords": "manual hand chain winder"
+  },
+  {
+   "slug": "remotes-for-motors",
+   "name": "Remotes for Motors",
+   "category": "remotes-controls",
+   "badge": "433 MHz · up to 50 m",
+   "summary": "Upgraded super-copy remote controls that learn the code of your original remote.",
+   "intro": [
+    "Upgraded super-copy remote controls for shutter and gate motors, in a wide range of shapes, buttons and key-ring styles."
+   ],
+   "features_title": "Features",
+   "features": [
+    {
+     "title": "Automatic code copying",
+     "text": ""
+    },
+    {
+     "title": "Learning 433 MHz",
+     "text": ""
+    },
+    {
+     "title": "Strong, stable signal",
+     "text": ""
+    },
+    {
+     "title": "Strong anti-interference",
+     "text": ""
+    },
+    {
+     "title": "Wide applicability",
+     "text": ""
+    },
+    {
+     "title": "Working distance up to 50 metres",
+     "text": ""
+    }
+   ],
+   "specs": [
+    [
+     "Frequency",
+     "433 MHz"
+    ],
+    [
+     "Working distance",
+     "Up to 50 m"
+    ]
+   ],
+   "images": [
+    {
+     "file": "remotes-for-motors/remote-range.webp",
+     "alt": "Range of motor remote controls",
+     "width": 448,
+     "height": 448
+    },
+    {
+     "file": "remotes-for-motors/metal-keyfob.webp",
+     "alt": "Metal-trim four-button key-fob remote",
+     "width": 204,
+     "height": 220
+    },
+    {
+     "file": "remotes-for-motors/four-button-blue.webp",
+     "alt": "Four-button remote with coloured keys",
+     "width": 110,
+     "height": 175
+    },
+    {
+     "file": "remotes-for-motors/four-button-red-logo.webp",
+     "alt": "Four-button remote with large keys",
+     "width": 121,
+     "height": 189
+    },
+    {
+     "file": "remotes-for-motors/four-button-round.webp",
+     "alt": "Four-button remote with round keys",
+     "width": 99,
+     "height": 163
+    },
+    {
+     "file": "remotes-for-motors/gate-remote-white.webp",
+     "alt": "Three-button gate remote",
+     "width": 204,
+     "height": 257
+    },
+    {
+     "file": "remotes-for-motors/four-button-clip.webp",
+     "alt": "Four-button remote with belt clip",
+     "width": 240,
+     "height": 240
+    }
+   ],
+   "keywords": "remote controller fob copy 433 learning bft faac"
+  },
+  {
+   "slug": "push-button-stations",
+   "name": "Push Button for Motors",
+   "category": "remotes-controls",
+   "badge": "Custom builds on request",
+   "summary": "Wired push-button stations for operating motors without a remote — guard rooms, homes and industry.",
+   "intro": [
+    "Push buttons are used to operate a motor without remote controllers. They are mostly used in guard rooms, inside the house, in industries and similar settings.",
+    "Can be customised on customer demand."
+   ],
+   "images": [
+    {
+     "file": "push-button-stations/three-button-round.webp",
+     "alt": "Three-button station with red, green and amber push buttons",
+     "width": 121,
+     "height": 209
+    },
+    {
+     "file": "push-button-stations/up-stop-down.webp",
+     "alt": "Up, stop and down panel-mount push button unit",
+     "width": 224,
+     "height": 221
+    },
+    {
+     "file": "push-button-stations/for-rev-stop.webp",
+     "alt": "Forward, reverse and stop push button box",
+     "width": 236,
+     "height": 213
+    },
+    {
+     "file": "push-button-stations/stop-start.webp",
+     "alt": "Stop and start push button box with cable gland",
+     "width": 225,
+     "height": 217
+    }
+   ],
+   "keywords": "push button station switch up stop down"
+  },
+  {
+   "slug": "wifi-devices-for-motors",
+   "name": "Wi-Fi Devices for Motors",
+   "category": "remotes-controls",
+   "badge": "Phone or web control",
+   "summary": "Wi-Fi controllers that let you operate motors from a mobile phone application or web interface.",
+   "intro": [
+    "Wi-Fi devices are commonly used to control motors via mobile phones, offering convenience and efficiency in various applications. These devices typically work by connecting to a wireless network and allowing users to operate motors remotely using a dedicated mobile application or web interface."
+   ],
+   "images": [
+    {
+     "file": "wifi-devices-for-motors/wifi-controller-kit.webp",
+     "alt": "Wi-Fi gate controller kit with open, stop and close buttons",
+     "width": 497,
+     "height": 457
+    },
+    {
+     "file": "wifi-devices-for-motors/wall-switch.webp",
+     "alt": "Wall-mounted up, pause and down switch",
+     "width": 391,
+     "height": 433
+    },
+    {
+     "file": "wifi-devices-for-motors/wifi-module.webp",
+     "alt": "Wi-Fi relay module",
+     "width": 282,
+     "height": 342
+    }
+   ],
+   "keywords": "wifi smart phone app"
+  },
+  {
+   "slug": "infrared-sensors",
+   "name": "Infrared Sensors",
+   "category": "sensors",
+   "badge": "Gate & door safety",
+   "summary": "Infrared sensors that detect heat or motion for security and automatic door applications.",
+   "intro": [
+    "An infrared sensor (IR sensor) is an electronic device that detects and measures infrared radiation — a type of electromagnetic radiation invisible to the human eye — allowing it to sense heat or motion from objects in its surroundings.",
+    "Commonly used in applications like motion detectors, night-vision equipment, remote controls and security systems."
+   ],
+   "images": [
+    {
+     "file": "infrared-sensors/photocell-pair.webp",
+     "alt": "Pair of infrared photocell sensors with covers removed",
+     "width": 422,
+     "height": 426
+    },
+    {
+     "file": "infrared-sensors/round-photocell.webp",
+     "alt": "Round infrared sensor pair with circuit boards",
+     "width": 309,
+     "height": 332
+    }
+   ],
+   "keywords": "ir photocell beam safety"
+  },
+  {
+   "slug": "microwave-radar-sensors",
+   "name": "Microwave Radar Sensors",
+   "category": "sensors",
+   "badge": "Contactless activation",
+   "summary": "Contactless microwave door motion sensors for hands-free automatic door activation.",
+   "intro": [
+    "Our microwave door motion sensor is a high-performance, contactless activation sensor designed for reliable, automatic operation of various types of door. Using advanced microwave radar technology, it detects approaching pedestrians and activates the door automatically, providing smooth, convenient, hands-free access."
+   ],
+   "features_title": "Applications",
+   "features": [
+    {
+     "title": "Automatic sliding doors",
+     "text": ""
+    },
+    {
+     "title": "High-speed PVC doors",
+     "text": ""
+    },
+    {
+     "title": "Industrial automatic doors",
+     "text": ""
+    },
+    {
+     "title": "Warehouse & factory doors",
+     "text": ""
+    },
+    {
+     "title": "Cleanroom doors",
+     "text": ""
+    },
+    {
+     "title": "Commercial entrance doors",
+     "text": ""
+    },
+    {
+     "title": "Garage & parking doors",
+     "text": ""
+    },
+    {
+     "title": "Hospital and healthcare doors",
+     "text": ""
+    },
+    {
+     "title": "Supermarkets, shopping malls & office buildings",
+     "text": ""
+    }
+   ],
+   "images": [
+    {
+     "file": "microwave-radar-sensors/dome-sensor.webp",
+     "alt": "Dome-shaped microwave motion sensor with cable",
+     "width": 348,
+     "height": 348
+    },
+    {
+     "file": "microwave-radar-sensors/bar-sensor.webp",
+     "alt": "Bar-shaped microwave sensor with circuit board and cable",
+     "width": 453,
+     "height": 309
+    }
+   ],
+   "keywords": "radar motion door sensor"
+  },
+  {
+   "slug": "remote-control-kits",
+   "name": "Remote Control Kits (Wi-Fi / Non-Wi-Fi)",
+   "category": "remotes-controls",
+   "badge": "Wi-Fi and standard kits",
+   "summary": "Receiver-and-remote kits for shutter motors, with Wi-Fi and non-Wi-Fi versions.",
+   "intro": [
+    "These remote control kits are designed for operating shutter motors. Non-Wi-Fi kits are used exclusively with remotes that connect directly to a receiver. In contrast, Wi-Fi kits allow users to operate the system from their mobile devices by establishing a connection with the device."
+   ],
+   "features_title": "Two versions",
+   "features": [
+    {
+     "title": "Non-Wi-Fi kit",
+     "text": "Receiver paired directly with hand-held remotes."
+    },
+    {
+     "title": "Wi-Fi kit",
+     "text": "Operate the system from a mobile device through a connected unit."
+    }
+   ],
+   "images": [
+    {
+     "file": "remote-control-kits/non-wifi-kit.webp",
+     "alt": "Non-Wi-Fi shutter remote kit with receiver and two remotes",
+     "width": 223,
+     "height": 184
+    },
+    {
+     "file": "remote-control-kits/wifi-kit.webp",
+     "alt": "Wi-Fi remote control kit with receiver and two remotes",
+     "width": 225,
+     "height": 184
+    }
+   ],
+   "keywords": "receiver kit wifi shutter"
+  },
+  {
+   "slug": "universal-rf-remote-control",
+   "name": "Universal RF Remote Control",
+   "category": "remotes-controls",
+   "badge": "12 V DC · single channel",
+   "summary": "12 V DC single-channel RF relay module with two remotes for gates, shutters and lighting.",
+   "intro": [
+    "Universal 12 V DC RF wireless remote control switch set.",
+    "Upgrade your automation systems with this compact, high-performance 12 V DC single-channel RF wireless remote control kit. Engineered for seamless remote switching, this versatile relay module lets you wirelessly operate gate openers, roller shutters, LED lighting and custom electrical circuits with ease."
+   ],
+   "specs": [
+    [
+     "Supply",
+     "12 V DC"
+    ],
+    [
+     "Channels",
+     "Single channel"
+    ],
+    [
+     "Module size",
+     "39 × 35 × 24 mm"
+    ]
+   ],
+   "images": [
+    {
+     "file": "universal-rf-remote-control/receiver-and-remotes.webp",
+     "alt": "RF relay receiver with two ON / OFF key-fob remotes",
+     "width": 391,
+     "height": 372
+    },
+    {
+     "file": "universal-rf-remote-control/receiver-dimensions.webp",
+     "alt": "RF relay receiver with dimensions marked",
+     "width": 456,
+     "height": 449
+    }
+   ],
+   "keywords": "rf relay 12v universal switch"
+  },
+  {
+   "slug": "roller-chains",
+   "name": "Roller Chains",
+   "category": "chains",
+   "badge": "No. 420 to 120 · chain locks",
+   "summary": "Pre-stretched alloy steel roller chains in standard, O-ring and multi-strand series, with chain locks.",
+   "intro": [
+    "All chains are available in high-resistance material."
+   ],
+   "features_title": "Build quality",
+   "features": [
+    {
+     "title": "High-quality alloy steel",
+     "text": ""
+    },
+    {
+     "title": "Pre-stretched and anti-fatigue",
+     "text": ""
+    },
+    {
+     "title": "German high-precision manufacture",
+     "text": ""
+    },
+    {
+     "title": "Punching-press shaped",
+     "text": ""
+    },
+    {
+     "title": "High-tech grease applied",
+     "text": ""
+    },
+    {
+     "title": "Advanced heat-treatment process applied",
+     "text": ""
+    }
+   ],
+   "series": [
+    [
+     "No. 420 & 420H",
+     ""
+    ],
+    [
+     "No. 428 & 428H",
+     ""
+    ],
+    [
+     "No. 520",
+     "with & without O-rings"
+    ],
+    [
+     "No. 525",
+     "with & without O-rings"
+    ],
+    [
+     "No. 50",
+     ""
+    ],
+    [
+     "No. 60",
+     "60, 60-1, 60-2, 60-3"
+    ],
+    [
+     "No. 80",
+     "80, 80-1, 80-2, 80-3"
+    ],
+    [
+     "No. 100",
+     "100, 100-1, 100-2, 100-3"
+    ],
+    [
+     "No. 120",
+     "120, 120-1, 120-2, 120-3"
+    ],
+    [
+     "Roller chain locks",
+     ""
+    ]
+   ],
+   "images": [
+    {
+     "file": "roller-chains/chains.webp",
+     "alt": "Close-up of roller chains",
+     "width": 612,
+     "height": 408
+    },
+    {
+     "file": "roller-chains/chain-420.webp",
+     "alt": "Roller chain No. 420",
+     "width": 475,
+     "height": 195
+    },
+    {
+     "file": "roller-chains/chain-428.webp",
+     "alt": "Roller chain No. 428 with connecting link",
+     "width": 453,
+     "height": 332
+    },
+    {
+     "file": "roller-chains/chain-520.webp",
+     "alt": "Gold roller chain No. 520",
+     "width": 445,
+     "height": 249
+    },
+    {
+     "file": "roller-chains/chain-525.webp",
+     "alt": "Roller chain No. 525 with sprockets and O-rings",
+     "width": 444,
+     "height": 280
+    },
+    {
+     "file": "roller-chains/chain-50.webp",
+     "alt": "Roller chain No. 50",
+     "width": 452,
+     "height": 291
+    },
+    {
+     "file": "roller-chains/chain-60-120.webp",
+     "alt": "Multi-strand roller chain, Nos. 60 to 120",
+     "width": 523,
+     "height": 288
+    },
+    {
+     "file": "roller-chains/chain-locks.webp",
+     "alt": "Assorted roller chain locks",
+     "width": 333,
+     "height": 246
+    },
+    {
+     "file": "roller-chains/chain-lock-detail.webp",
+     "alt": "Roller chain lock with spring clip",
+     "width": 300,
+     "height": 247
+    }
+   ],
+   "keywords": "chain locks 420 428 520 525 50 60 80 100 120 o-ring"
+  }
+ ]
+}

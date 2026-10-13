@@ -1,0 +1,36 @@
+{% from "partials/icons.html" import icon %}
+<header class="site-header" data-header>
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <p class="topbar__item">{{ icon('pin', 15) }}<span>{{ site.address_oneline }}</span></p>
+      <p class="topbar__item topbar__item--end">
+        <a href="tel:{{ site.phones[0].tel }}">{{ icon('phone', 15) }}<span>{{ site.phones[0].label }}</span></a>
+        <a href="mailto:{{ site.email }}">{{ icon('mail', 15) }}<span>{{ site.email }}</span></a>
+      </p>
+    </div>
+  </div>
+
+  <div class="mainbar">
+    <div class="container mainbar__inner">
+      <a class="brand" href="{{ root }}index.html" aria-label="Dynamic Drive — home">
+        <img src="{{ root }}assets/img/brand/logo.svg" width="138" height="46" alt="Dynamic Drive">
+      </a>
+
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <ul class="nav__list">
+          {% for item in site.nav %}
+          <li><a class="nav__link" href="{{ root }}{{ item.href }}"{% if item.key == page_key %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+          {% endfor %}
+        </ul>
+        <a class="btn btn--accent nav__cta" href="https://wa.me/{{ site.whatsapp }}?text={{ 'Hello Dynamic Drives, I would like a quotation.'|urlencode }}" target="_blank" rel="noopener">
+          {{ icon('whatsapp', 17) }}Request a quote
+        </a>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="visually-hidden">Menu</span>
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</header>

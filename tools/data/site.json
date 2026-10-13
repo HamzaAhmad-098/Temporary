@@ -1,0 +1,410 @@
+{
+ "site": {
+  "name": "Dynamic Drives",
+  "legal_name": "Dynamic Traders",
+  "brand_mark": "Dynamic Drive",
+  "tagline": "Let the automation take the strain",
+  "domain": "www.dynamicsdrives.com",
+  "description": "Dynamic Traders imports automation motors, industrial gear motors and VFDs from all over the world — shutter, sliding and swing gate motors, tubular and central motors, gear racks and every accessory. Authorised distributor in Pakistan, based in Lahore.",
+  "phones": [
+   {
+    "label": "0309-0308262",
+    "tel": "+923090308262"
+   },
+   {
+    "label": "0321-1008180",
+    "tel": "+923211008180"
+   }
+  ],
+  "landline": {
+   "label": "042-36290900",
+   "tel": "+924236290900"
+  },
+  "fax": "042-37231954",
+  "email": "Dynamicpowertransmission@gmail.com",
+  "whatsapp": "923090308262",
+  "address": [
+   "Office No. 12, 13 Usman Centre",
+   "Opposite Lahore Hotel, 25-Mcleod Road",
+   "Lahore, Pakistan 54000"
+  ],
+  "address_oneline": "Office 12, 13 Usman Centre, Opposite Lahore Hotel, 25-Mcleod Road, Lahore 54000",
+  "director": {
+   "name": "Muhammad Harris Khan",
+   "title": "Executive Director"
+  },
+  "nav": [
+   {
+    "label": "Home",
+    "href": "index.html",
+    "key": "home"
+   },
+   {
+    "label": "Products",
+    "href": "products.html",
+    "key": "products"
+   },
+   {
+    "label": "Brands",
+    "href": "brands.html",
+    "key": "brands"
+   },
+   {
+    "label": "About",
+    "href": "about.html",
+    "key": "about"
+   },
+   {
+    "label": "Contact",
+    "href": "contact.html",
+    "key": "contact"
+   }
+  ],
+  "hero_slides": [
+   "shutter-motor",
+   "sliding-gate-motor",
+   "swing-gate-motor",
+   "tubular-motor",
+   "central-mechanical-motor"
+  ],
+  "featured": [
+   "shutter-motor",
+   "sliding-gate-motor",
+   "m-driver-vfd",
+   "industrial-gear-reducers-motors"
+  ],
+  "category_cover": {
+   "shutters-doors": "shutter-motor",
+   "gates-barriers": "sliding-gate-motor",
+   "industrial-drives": "industrial-gear-reducers-motors",
+   "remotes-controls": "remotes-for-motors",
+   "sensors": "microwave-radar-sensors",
+   "chains": "roller-chains"
+  },
+  "about_range": [
+   "AC shutter motors",
+   "DC shutter motors",
+   "AC sliding gate motors",
+   "DC sliding gate motors",
+   "Explosion-proof shutter motors",
+   "Swing gate motors",
+   "Tubular motors",
+   "Central mechanical motors"
+  ]
+ },
+ "brands": [
+  {
+   "file": "brands/kehong.webp",
+   "name": "Kehong",
+   "note": "Shutter motors",
+   "authorised": true,
+   "width": 370,
+   "height": 262
+  },
+  {
+   "file": "brands/m-driver.webp",
+   "name": "M-Driver",
+   "note": "Variable frequency drives",
+   "authorised": true,
+   "width": 444,
+   "height": 149
+  },
+  {
+   "file": "brands/dynamic-drive.webp",
+   "name": "Dynamic Drive",
+   "note": "Our own brand",
+   "authorised": false,
+   "width": 472,
+   "height": 518
+  },
+  {
+   "file": "brands/deper.webp",
+   "name": "Deper",
+   "note": "Automatic door & window",
+   "authorised": false,
+   "width": 392,
+   "height": 138
+  },
+  {
+   "file": "brands/centurion.webp",
+   "name": "Centurion",
+   "note": "The automatic choice",
+   "authorised": false,
+   "width": 279,
+   "height": 180
+  },
+  {
+   "file": "brands/bft.webp",
+   "name": "BFT",
+   "note": "Be ahead",
+   "authorised": false,
+   "width": 228,
+   "height": 204
+  },
+  {
+   "file": "brands/zkteco.webp",
+   "name": "ZKTeco",
+   "note": "Access control & barriers",
+   "authorised": false,
+   "width": 376,
+   "height": 127
+  },
+  {
+   "file": "brands/omker.webp",
+   "name": "Omker",
+   "note": "",
+   "authorised": false,
+   "width": 471,
+   "height": 237
+  },
+  {
+   "file": "brands/abb.webp",
+   "name": "ABB",
+   "note": "",
+   "authorised": false,
+   "width": 384,
+   "height": 153
+  },
+  {
+   "file": "brands/chint.webp",
+   "name": "CHINT",
+   "note": "Material electrico",
+   "authorised": false,
+   "width": 320,
+   "height": 124
+  }
+ ],
+ "customers": [
+  {
+   "file": "customers/ubl.webp",
+   "name": "UBL",
+   "width": 570,
+   "height": 378
+  },
+  {
+   "file": "customers/allied-bank.webp",
+   "name": "Allied Bank",
+   "width": 355,
+   "height": 70
+  },
+  {
+   "file": "customers/syed-brothers.webp",
+   "name": "Syed Brothers",
+   "width": 268,
+   "height": 113
+  },
+  {
+   "file": "customers/jdw-group.webp",
+   "name": "JDW Group",
+   "width": 191,
+   "height": 122
+  },
+  {
+   "file": "customers/gourmet-foods.webp",
+   "name": "Gourmet Foods",
+   "width": 206,
+   "height": 89
+  },
+  {
+   "file": "customers/engro-foods.webp",
+   "name": "Engro Foods",
+   "width": 215,
+   "height": 85
+  },
+  {
+   "file": "customers/exide.webp",
+   "name": "Exide Industries Limited",
+   "width": 210,
+   "height": 72
+  },
+  {
+   "file": "customers/nestle.webp",
+   "name": "Nestlé",
+   "width": 135,
+   "height": 90
+  },
+  {
+   "file": "customers/pie-in-the-sky.webp",
+   "name": "Pie in the Sky",
+   "width": 180,
+   "height": 180
+  },
+  {
+   "file": "customers/unilever.webp",
+   "name": "Unilever",
+   "width": 128,
+   "height": 142
+  },
+  {
+   "file": "customers/packages-mall.webp",
+   "name": "Packages Mall",
+   "width": 140,
+   "height": 117
+  },
+  {
+   "file": "customers/hi-tech-group.webp",
+   "name": "Hi-Tech Group of Companies",
+   "width": 175,
+   "height": 79
+  },
+  {
+   "file": "customers/kandns.webp",
+   "name": "K&N’s",
+   "width": 146,
+   "height": 90
+  },
+  {
+   "file": "customers/dawn-foods.webp",
+   "name": "Dawn Foods",
+   "width": 190,
+   "height": 153
+  },
+  {
+   "file": "customers/emporium-mall.webp",
+   "name": "Emporium Mall",
+   "width": 210,
+   "height": 68
+  },
+  {
+   "file": "customers/hmc.webp",
+   "name": "Heavy Mechanical Complex",
+   "width": 261,
+   "height": 100
+  },
+  {
+   "file": "customers/sabroso.webp",
+   "name": "Sabroso",
+   "width": 292,
+   "height": 135
+  },
+  {
+   "file": "customers/descon.webp",
+   "name": "Descon",
+   "width": 151,
+   "height": 146
+  },
+  {
+   "file": "customers/nishat.webp",
+   "name": "Nishat",
+   "width": 150,
+   "height": 139
+  },
+  {
+   "file": "customers/avari-lahore.webp",
+   "name": "Avari Lahore",
+   "width": 176,
+   "height": 85
+  },
+  {
+   "file": "customers/sai-dairy.webp",
+   "name": "Sai Dairy",
+   "width": 161,
+   "height": 156
+  },
+  {
+   "file": "customers/philip-morris-international.webp",
+   "name": "Philip Morris International",
+   "width": 370,
+   "height": 84
+  },
+  {
+   "file": "customers/pakistan-army.webp",
+   "name": "Pakistan Army",
+   "width": 400,
+   "height": 400
+  },
+  {
+   "file": "customers/miniso.webp",
+   "name": "Miniso",
+   "width": 340,
+   "height": 95
+  },
+  {
+   "file": "customers/breakout.webp",
+   "name": "Breakout",
+   "width": 183,
+   "height": 61
+  },
+  {
+   "file": "customers/pepsico.webp",
+   "name": "PepsiCo",
+   "width": 480,
+   "height": 144
+  },
+  {
+   "file": "customers/pakistan-tobacco-company.webp",
+   "name": "Pakistan Tobacco Company",
+   "width": 308,
+   "height": 157
+  },
+  {
+   "file": "customers/pakistan-steel-mill.webp",
+   "name": "Pakistan Steel Mill",
+   "width": 354,
+   "height": 347
+  }
+ ],
+ "documents": [
+  {
+   "id": "kehong",
+   "file": "documents/distribution-letter-kehong.webp",
+   "width": 826,
+   "height": 1113,
+   "title": "Distribution letter — Kehong",
+   "issuer": "Zhangzhou Roda Co., Ltd",
+   "date": "6 June 2025",
+   "summary": "Zhangzhou Roda Co., Ltd authorises Dynamic Traders as its unique distributor of the Kehong-brand roller shutter motor in Pakistan, and will refer any other Pakistani client to Dynamic Traders.",
+   "facts": [
+    [
+     "Supplier",
+     "Zhangzhou Roda Co., Ltd"
+    ],
+    [
+     "Brand",
+     "Kehong roller shutter motors"
+    ],
+    [
+     "Territory",
+     "Pakistan"
+    ],
+    [
+     "Dated",
+     "6 June 2025"
+    ]
+   ]
+  },
+  {
+   "id": "m-driver",
+   "file": "documents/certificate-m-driver.webp",
+   "width": 849,
+   "height": 1200,
+   "title": "Certificate of distribution — M-Driver",
+   "issuer": "Shenzhen M-driver Technology Co., Ltd",
+   "date": "31 August 2022",
+   "summary": "Shenzhen M-driver Technology Co., Ltd appoints Dynamic Traders as distributor for the territory of Pakistan.",
+   "facts": [
+    [
+     "Issuer",
+     "Shenzhen M-driver Technology Co., Ltd"
+    ],
+    [
+     "Certificate no.",
+     "M-20220831"
+    ],
+    [
+     "Issued",
+     "31 August 2022"
+    ],
+    [
+     "Expires",
+     "30 August 2027"
+    ]
+   ]
+  }
+ ],
+ "seal": {
+  "file": "documents/dynamic-traders-seal.webp",
+  "width": 133,
+  "height": 133
+ }
+}

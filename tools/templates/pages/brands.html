@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% from "partials/icons.html" import icon %}
+
+{% block title %}Brands & authorisations — {{ site.name }}{% endblock %}
+{% block description %}The brands Dynamic Traders supplies, and the written distribution authorisations we hold from Kehong and M-Driver.{% endblock %}
+{% block styles %}<link rel="stylesheet" href="{{ root }}assets/css/brands.css">{% endblock %}
+
+{% block main %}
+<section class="page-head">
+  <div class="page-head__grid" aria-hidden="true"></div>
+  <div class="container page-head__inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol><li><a href="{{ root }}index.html">Home</a></li><li aria-current="page">Brands</li></ol>
+    </nav>
+    <h1 class="page-head__title">Brands &amp; authorisations</h1>
+    <p class="page-head__lede">We import and distribute {{ brands|length }} brands, and hold written authorisation from two of the manufacturers.</p>
+  </div>
+</section>
+
+<section class="section" id="authorisations" aria-labelledby="auth-title">
+  <div class="container">
+    <header class="section-head">
+      <p class="eyebrow">Distribution authorisations</p>
+      <h2 id="auth-title" class="section-head__title">Authorised distributor of Pakistan</h2>
+      <p class="section-head__lede">Select a document to read it in full.</p>
+    </header>
+
+    <div class="auth-grid">
+      {% for d in documents %}
+      <article class="auth-card" id="doc-{{ d.id }}">
+        <button type="button" class="auth-card__doc" data-lightbox="{{ root }}assets/img/{{ d.file }}" data-lightbox-alt="{{ d.title }}" aria-label="Open {{ d.title }} full size">
+          <img src="{{ root }}assets/img/{{ d.file }}" width="{{ d.width }}" height="{{ d.height }}" alt="{{ d.title }}" loading="lazy">
+          <span class="auth-card__zoom">{{ icon('expand', 18) }}Enlarge</span>
+        </button>
+        <div class="auth-card__body">
+          <p class="eyebrow">{{ d.issuer }}</p>
+          <h3 class="auth-card__title">{{ d.title }}</h3>
+          <p>{{ d.summary }}</p>
+          <dl class="spec-table">
+            {% for k, v in d.facts %}<div><dt>{{ k }}</dt><dd>{{ v }}</dd></div>{% endfor %}
+          </dl>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--white" aria-labelledby="brands-title">
+  <div class="container">
+    <header class="section-head">
+      <p class="eyebrow">Brands we offer</p>
+      <h2 id="brands-title" class="section-head__title">The brands on our shelves</h2>
+    </header>
+    <ul class="brand-grid" role="list">
+      {% for b in brands %}
+      <li class="brand-tile">
+        <div class="brand-tile__logo"><img src="{{ root }}assets/img/{{ b.file }}" width="{{ b.width }}" height="{{ b.height }}" alt="{{ b.name }} logo" loading="lazy"></div>
+        <p class="brand-tile__name">{{ b.name }}{% if b.authorised %}<span class="tag">Authorised</span>{% endif %}</p>
+        {% if b.note %}<p class="brand-tile__note">{{ b.note }}</p>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+{% include "partials/cta.html" %}
+
+<div class="lightbox" data-lightbox-root hidden>
+  <button type="button" class="lightbox__close" data-lightbox-close aria-label="Close">{{ icon('close', 22) }}</button>
+</div>
+{% endblock %}
+
+{% block scripts %}<script defer src="{{ root }}assets/js/lightbox.js"></script>{% endblock %}

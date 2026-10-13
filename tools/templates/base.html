@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ site.name }} — {{ site.tagline }}{% endblock %}</title>
+  <meta name="description" content="{% block description %}{{ site.description }}{% endblock %}">
+  <meta name="theme-color" content="#0c0e12">
+  <meta property="og:site_name" content="{{ site.legal_name }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ self.title() }}">
+  <meta property="og:description" content="{{ self.description() }}">
+  <link rel="icon" type="image/svg+xml" href="{{ root }}assets/img/brand/favicon.svg">
+
+  <link rel="stylesheet" href="{{ root }}assets/css/base.css">
+  <link rel="stylesheet" href="{{ root }}assets/css/layout.css">
+  <link rel="stylesheet" href="{{ root }}assets/css/components.css">
+  {% block styles %}{% endblock %}
+  {% block head_extra %}{% endblock %}
+</head>
+<body class="page-{{ page_key or 'plain' }}">
+  {% block splash %}{% endblock %}
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div id="page">
+    {% include "partials/header.html" %}
+    <main id="main">
+      {% block main %}{% endblock %}
+    </main>
+    {% include "partials/footer.html" %}
+  </div>
+
+  {% from "partials/icons.html" import icon %}
+  <a class="wa-float" href="https://wa.me/{{ site.whatsapp }}" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    {{ icon('whatsapp', 28) }}
+  </a>
+
+  <script defer src="{{ root }}assets/js/main.js"></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

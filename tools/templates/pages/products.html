@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% from "partials/icons.html" import icon %}
+{% from "partials/product_card.html" import product_card %}
+
+{% block title %}Products — {{ site.name }}{% endblock %}
+{% block description %}Shutter, gate and tubular motors, industrial gear motors, VFDs, remotes, sensors and chains — the full Dynamic Drives catalogue with ready stock in Lahore.{% endblock %}
+{% block styles %}<link rel="stylesheet" href="{{ root }}assets/css/products.css">{% endblock %}
+
+{% block main %}
+<section class="page-head">
+  <div class="page-head__grid" aria-hidden="true"></div>
+  <div class="container page-head__inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol><li><a href="{{ root }}index.html">Home</a></li><li aria-current="page">Products</li></ol>
+    </nav>
+    <h1 class="page-head__title">Product catalogue</h1>
+    <p class="page-head__lede">{{ products|length }} product lines in {{ categories|length }} families, listed as in our 2026–27 catalogue. Most are held in ready stock in Lahore.</p>
+    <a class="btn btn--ghost" href="{{ root }}assets/docs/Dynamic-Traders-Catalogue-2026-27.pdf" download>{{ icon('download', 18) }}Download the PDF catalogue</a>
+  </div>
+</section>
+
+<section class="catalogue" data-catalogue>
+  <div class="catalogue__bar">
+    <div class="container catalogue__bar-inner">
+      <div class="chips" role="group" aria-label="Filter by family">
+        <button type="button" class="chip is-active" data-filter="all" aria-pressed="true">All <span>{{ products|length }}</span></button>
+        {% for c in categories %}
+        <button type="button" class="chip" data-filter="{{ c.slug }}" aria-pressed="false">{{ c.name }} <span>{{ c.products|length }}</span></button>
+        {% endfor %}
+      </div>
+      <label class="search">
+        <span class="visually-hidden">Search products</span>
+        {{ icon('search', 18) }}
+        <input type="search" placeholder="Search products" autocomplete="off" data-search>
+      </label>
+    </div>
+  </div>
+
+  <div class="container catalogue__body">
+    <p class="catalogue__status" aria-live="polite" data-status>Showing all {{ products|length }} product lines</p>
+    <div class="card-grid" data-grid>
+      {% for p in products %}{{ product_card(p, root, filterable=true) }}{% endfor %}
+    </div>
+    <div class="empty" data-empty hidden>
+      <h2>No products match that search</h2>
+      <p>Try a shorter word, or <a href="{{ root }}contact.html">ask us</a> — if it is not listed we can often source it.</p>
+    </div>
+  </div>
+</section>
+
+{% include "partials/cta.html" %}
+{% endblock %}
+
+{% block scripts %}<script defer src="{{ root }}assets/js/catalogue.js"></script>{% endblock %}

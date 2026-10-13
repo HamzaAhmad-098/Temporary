@@ -1,0 +1,10 @@
+{#- Grid of customer logos. -#}
+{% macro logo_wall(customers, root) %}
+<ul class="logo-wall" role="list">
+  {% for c in customers %}
+  <li class="logo-wall__item">
+    <img src="{{ root }}assets/img/{{ c.file }}" width="{{ c.width }}" height="{{ c.height }}" alt="{{ c.name }}" loading="lazy">
+  </li>
+  {% endfor %}
+</ul>
+{% endmacro %}

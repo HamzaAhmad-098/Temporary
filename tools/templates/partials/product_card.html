@@ -1,0 +1,20 @@
+{#- Product card used on the home page, catalogue and "related" strips. -#}
+{% from "partials/icons.html" import icon %}
+{% macro product_card(p, root, filterable=false) %}
+<article class="product-card"{% if filterable %} data-product data-category="{{ p.category }}" data-search="{{ (p.name ~ ' ' ~ p.category_name ~ ' ' ~ p.summary ~ ' ' ~ p.keywords)|lower }}"{% endif %}>
+  <a class="product-card__link" href="{{ root }}products/{{ p.slug }}.html">
+    <div class="product-card__media">
+      <img src="{{ root }}assets/img/products/{{ p.images[0].file }}" width="{{ p.images[0].width }}" height="{{ p.images[0].height }}" alt="{{ p.images[0].alt }}" loading="lazy">
+    </div>
+    <div class="product-card__body">
+      <p class="product-card__category">{{ p.category_name }}</p>
+      <h3 class="product-card__title">{{ p.name }}</h3>
+      <p class="product-card__summary">{{ p.summary }}</p>
+    </div>
+    <div class="product-card__foot">
+      <span class="product-card__badge">{{ p.badge }}</span>
+      <span class="product-card__go" aria-hidden="true">{{ icon('arrow', 18) }}</span>
+    </div>
+  </a>
+</article>
+{% endmacro %}

@@ -1,0 +1,47 @@
+{% from "partials/icons.html" import icon %}
+<footer class="site-footer">
+  <div class="container footer__grid">
+    <div class="footer__about">
+      <img src="{{ root }}assets/img/brand/logo.svg" width="168" height="56" alt="Dynamic Drive" loading="lazy">
+      <p class="footer__tag">{{ site.tagline }}.</p>
+      <p>{{ site.legal_name }}® imports automation motors, industrial gear motors and VFDs from all over the world, with ready stock in Lahore.</p>
+    </div>
+
+    <nav class="footer__col" aria-label="Product families">
+      <h2 class="footer__title">Products</h2>
+      <ul>
+        {% for c in categories %}
+        <li><a href="{{ root }}products.html#{{ c.slug }}">{{ c.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+
+    <nav class="footer__col" aria-label="Company">
+      <h2 class="footer__title">Company</h2>
+      <ul>
+        <li><a href="{{ root }}about.html">About us</a></li>
+        <li><a href="{{ root }}brands.html">Brands</a></li>
+        <li><a href="{{ root }}brands.html#authorisations">Authorisations</a></li>
+        <li><a href="{{ root }}contact.html">Contact</a></li>
+        <li><a href="{{ root }}assets/docs/Dynamic-Traders-Catalogue-2026-27.pdf" download>Catalogue (PDF)</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer__col footer__contact">
+      <h2 class="footer__title">Visit or call</h2>
+      <address>
+        <p>{{ icon('pin', 16) }}<span>{% for line in site.address %}{{ line }}{% if not loop.last %}<br>{% endif %}{% endfor %}</span></p>
+        <p>{{ icon('phone', 16) }}<span>{% for p in site.phones %}<a href="tel:{{ p.tel }}">{{ p.label }}</a>{% if not loop.last %} / {% endif %}{% endfor %}<br><a href="tel:{{ site.landline.tel }}">{{ site.landline.label }}</a> · Fax {{ site.fax }}</span></p>
+        <p>{{ icon('mail', 16) }}<a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+        <p>{{ icon('globe', 16) }}<span>{{ site.domain }}</span></p>
+      </address>
+    </div>
+  </div>
+
+  <div class="footer__legal">
+    <div class="container footer__legal-inner">
+      <p>© {{ year }} {{ site.legal_name }}. All rights reserved.</p>
+      <p>Authorised distributor in Pakistan.</p>
+    </div>
+  </div>
+</footer>

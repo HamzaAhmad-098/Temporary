@@ -1,0 +1,15 @@
+{% from "partials/icons.html" import icon %}
+<section class="cta" aria-labelledby="cta-title">
+  <div class="container cta__inner">
+    <div class="cta__copy">
+      <p class="eyebrow eyebrow--light">Get in touch</p>
+      <h2 id="cta-title" class="cta__title">{{ cta_title|default('Need a quotation or technical advice?') }}</h2>
+      <p>{{ cta_text|default('Call, message or visit our Lahore office. Tell us the application and the load and we will point you to the right motor, drive or accessory.') }}</p>
+    </div>
+    <div class="cta__actions">
+      <a class="btn btn--whatsapp" href="https://wa.me/{{ site.whatsapp }}?text={{ 'Hello Dynamic Drives, I would like a quotation.'|urlencode }}" target="_blank" rel="noopener">{{ icon('whatsapp', 18) }}Chat on WhatsApp</a>
+      <a class="btn btn--ghost" href="tel:{{ site.phones[0].tel }}">{{ icon('phone', 18) }}{{ site.phones[0].label }}</a>
+      <a class="btn btn--ghost" href="{{ root }}contact.html">Contact page{{ icon('arrow', 18) }}</a>
+    </div>
+  </div>
+</section>

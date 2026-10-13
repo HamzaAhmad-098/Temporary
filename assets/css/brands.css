@@ -1,0 +1,170 @@
+/* ==========================================================================
+   brands.css — authorisations and brand grid
+   ========================================================================== */
+
+.auth-grid {
+  display: grid;
+  gap: 32px;
+}
+
+.auth-card {
+  display: grid;
+  grid-template-columns: minmax(220px, 300px) 1fr;
+  gap: clamp(24px, 4vw, 48px);
+  align-items: start;
+  padding: clamp(20px, 3vw, 32px);
+  background: var(--white);
+  border: 1px solid var(--line);
+}
+
+.auth-card__doc {
+  position: relative;
+  display: block;
+  padding: 0;
+  overflow: hidden;
+  background: var(--paper-2);
+  border: 1px solid var(--line-strong);
+  box-shadow: 0 10px 28px rgba(12, 14, 18, 0.12);
+  cursor: zoom-in;
+  transition: transform 0.25s;
+}
+
+.auth-card__doc:hover {
+  transform: translateY(-3px);
+}
+
+.auth-card__zoom {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background: var(--ink);
+  color: var(--white);
+  font-family: var(--font-display);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.auth-card__title {
+  margin-bottom: 14px;
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+}
+
+.auth-card__body > p:not(.eyebrow) {
+  max-width: 62ch;
+  margin-bottom: 20px;
+  color: var(--muted);
+}
+
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.brand-tile {
+  background: var(--white);
+  border: 1px solid var(--line-strong);
+  text-align: center;
+}
+
+.brand-tile__logo {
+  display: flex;
+  height: 132px;
+  align-items: center;
+  justify-content: center;
+  padding: 22px 26px;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand-tile__logo img {
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.brand-tile__name {
+  padding: 14px 12px 0;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.brand-tile__note {
+  padding: 2px 12px 16px;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.brand-tile__name:last-child {
+  padding-bottom: 16px;
+}
+
+/* ---- Lightbox (document viewer) ---------------------------------------- */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(12, 14, 18, 0.93);
+  overflow: auto;
+}
+
+.lightbox__img {
+  max-width: min(100%, 880px);
+  max-height: none;
+  background: var(--white);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox__close {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  background: var(--white);
+  border: 0;
+  color: var(--ink);
+}
+
+.lightbox__close:hover {
+  background: var(--hover);
+}
+
+@media (max-width: 1000px) {
+  .brand-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .auth-card {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-card__doc {
+    max-width: 320px;
+  }
+
+  .brand-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .brand-tile__logo {
+    height: 104px;
+  }
+}

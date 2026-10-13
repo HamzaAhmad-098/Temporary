@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% from "partials/icons.html" import icon %}
+{% block title %}Page not found — {{ site.name }}{% endblock %}
+{% block main %}
+<section class="page-head">
+  <div class="page-head__grid" aria-hidden="true"></div>
+  <div class="container page-head__inner">
+    <p class="eyebrow eyebrow--light">Error 404</p>
+    <h1 class="page-head__title">That page is not here</h1>
+    <p class="page-head__lede">The link may be old or mistyped. Try the catalogue, or get in touch and we will help.</p>
+    <div class="hero__actions">
+      <a class="btn btn--accent btn--lg" href="{{ root }}products.html">Browse products{{ icon('arrow', 18) }}</a>
+      <a class="btn btn--ghost btn--lg" href="{{ root }}index.html">Back to home</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

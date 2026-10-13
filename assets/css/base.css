@@ -1,0 +1,217 @@
+/* ==========================================================================
+   base.css — fonts, design tokens, reset, typography
+   ========================================================================== */
+
+/* Fonts are self-hosted (assets/fonts) so the site renders the same offline. */
+@font-face {
+  font-family: "Barlow Condensed";
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/barlow-condensed-latin-500-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Barlow Condensed";
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/barlow-condensed-latin-600-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Barlow Condensed";
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/barlow-condensed-latin-700-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Source Sans 3";
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/source-sans-3-latin-wght-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Source Sans 3";
+  font-weight: 200 900;
+  font-style: italic;
+  font-display: swap;
+  src: url("../fonts/source-sans-3-latin-wght-italic.woff2") format("woff2");
+}
+
+:root {
+  /* Colour — carried over unchanged from the original site */
+  --ink: #0c0e12;
+  --ink-2: #14171d;
+  --ink-3: #1b2431;
+  --ink-line: rgba(255, 255, 255, 0.09);
+
+  --paper: #f5f3ef;
+  --paper-2: #ebe8e1;
+  --white: #ffffff;
+  --line: #e3dfd7;
+  --line-strong: #ddd8ce;
+
+  --text: #16191f;
+  --muted: #5b5a52;
+  --muted-2: #8b8570;
+
+  --on-dark: #c9ced6;
+  --on-dark-muted: #8b93a0;
+  --on-dark-dim: #5b626c;
+
+  --accent: #1f6fdb;
+  --accent-rgb: 31, 111, 219;
+  --accent-bright: #5aa2ff; /* lighter tint of the accent for small text on dark */
+  --hover: #ff7a45;
+  --whatsapp: #25d366;
+
+  /* Type */
+  --font-display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Source Sans 3", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+
+  /* Layout */
+  --container: 1200px;
+  --gutter: clamp(20px, 4vw, 40px);
+  --topbar-h: 40px;
+  --mainbar-h: 72px;
+  --radius: 2px;
+  --shadow-card: 0 1px 2px rgba(12, 14, 18, 0.06), 0 8px 24px rgba(12, 14, 18, 0.07);
+}
+
+/* Reset ------------------------------------------------------------------ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--mainbar-h) + 24px);
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+dl,
+dd,
+figure,
+address {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+address {
+  font-style: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-bright);
+  outline-offset: 3px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/* Typography ------------------------------------------------------------- */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* Accessibility helpers --------------------------------------------------- */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: fixed;
+  top: -120px;
+  left: 8px;
+  z-index: 3000;
+  padding: 10px 16px;
+  background: var(--accent);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 8px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

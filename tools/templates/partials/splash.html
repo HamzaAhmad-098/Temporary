@@ -1,0 +1,78 @@
+{#-
+  Intro splash. Shown once per browser session on the home page only.
+  The emblem and wordmark are the traced logo shapes, split into layers so
+  each part can animate on its own (see assets/css/splash.css).
+-#}
+<div id="ddSplash" class="splash" role="status" aria-live="polite" aria-label="Loading Dynamic Drive">
+  <div class="splash__grid"></div>
+  <div class="splash__scan"></div>
+  <div class="splash__vignette"></div>
+  <i class="splash__corner splash__corner--tl"></i><i class="splash__corner splash__corner--tr"></i>
+  <i class="splash__corner splash__corner--bl"></i><i class="splash__corner splash__corner--br"></i>
+
+  <svg class="splash__defs" width="0" height="0" aria-hidden="true">
+    <defs>
+      <path id="spGear" pathLength="1" d="{{ paths.gear }}"/>
+      <path id="spDWhite" d="{{ paths.dwhite }}"/>
+      <path id="spDBlue" d="{{ paths.dblue }}"/>
+      <path id="spRing" d="{{ paths.ring }}"/>
+      <linearGradient id="spShine" x1="0" x2="1" y1="0" y2="0">
+        <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+        <stop offset=".5" stop-color="#fff" stop-opacity=".75"/>
+        <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+      </linearGradient>
+      <clipPath id="spAll"><use href="#spGear"/><use href="#spDWhite"/><use href="#spDBlue"/><use href="#spRing"/></clipPath>
+    </defs>
+  </svg>
+
+  <div class="splash__stage">
+    <div class="splash__lockup">
+      <div class="splash__emblem" aria-hidden="true">
+        <div class="splash__glow"></div>
+        <div class="splash__orbit"></div>
+        <svg viewBox="-96 -96 192 192"><g class="sp-gear-spin"><use href="#spGear" class="sp-gear"/></g></svg>
+        <svg viewBox="-96 -96 192 192" class="sp-ring"><use href="#spRing"/></svg>
+        <svg viewBox="-96 -96 192 192"><use href="#spDWhite" class="sp-d sp-d--white"/><use href="#spDBlue" class="sp-d sp-d--blue"/></svg>
+        <svg viewBox="-96 -96 192 192" class="sp-shine"><g clip-path="url(#spAll)"><rect x="-70" y="-110" width="70" height="220" transform="skewX(-18)"/></g></svg>
+        <div class="splash__shock"></div>
+      </div>
+
+      <div class="splash__word">
+        {% set n = namespace(a=0, b=0) %}
+        <svg viewBox="0 0 364 138" role="img" aria-label="Dynamic Drive">
+          <defs>
+            <clipPath id="spLine0"><rect x="0" y="0" width="364" height="66"/></clipPath>
+            <clipPath id="spLine1"><rect x="0" y="70" width="364" height="68"/></clipPath>
+          </defs>
+          {% for line in (0, 1) %}
+          <g clip-path="url(#spLine{{ line }})">
+            {% for d in paths.letters %}
+            {% if paths.lines[loop.index0] == line %}
+            {% if line == 0 %}{% set n.a = n.a + 1 %}{% else %}{% set n.b = n.b + 1 %}{% endif %}
+            {% set delay = (1.75 + (n.a - 1) * 0.075) if line == 0 else (2.0 + (n.b - 1) * 0.075) %}
+            <path class="sp-letter" style="animation-delay:{{ '%.3f'|format(delay) }}s" d="{{ d }}"/>
+            {% endif %}
+            {% endfor %}
+          </g>
+          {% endfor %}
+        </svg>
+        <div class="splash__rule"></div>
+        <p class="splash__tag"><b>/</b> Authorised distributor of Pakistan</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="splash__progress" aria-hidden="true">
+    <div class="splash__progress-row"><span data-splash-label>Loading</span><span data-splash-num>000</span></div>
+    <div class="splash__bar"><i data-splash-bar></i></div>
+  </div>
+  <div class="splash__rail"></div>
+</div>
+<script>
+  /* Skip the splash for repeat visits in this tab; lock scrolling while it plays. */
+  (function () {
+    var el = document.getElementById('ddSplash');
+    try { if (sessionStorage.getItem('dd-splash')) { el.remove(); return; } } catch (e) {}
+    document.documentElement.classList.add('is-splashing');
+  })();
+</script>
